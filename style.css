@@ -1,0 +1,265 @@
+/*css par Frederic M */
+
+/* typos */
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/OpenSans-Regular-webfont.eot');
+    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body
+{
+
+}
+
+h1, h2, h3, h4
+{
+	text-transform: uppercase;
+	font-family: "open_sansregular";
+	font-size: 1.1em;
+	color: #113156;
+	font-size: 0.8em;
+
+}
+
+footer
+{
+	color: white;
+	background-color: black;
+	padding: 1%;
+}
+img
+{
+	border-radius: 100px;
+}
+article
+{
+	font-family: "open_sansregular";
+	font-size: 0.7em;
+	text-align: justify;
+	padding: 5%;
+}
+p
+{
+	color: #113156;
+}
+p
+{
+	font-size: 0.8em;
+	text-align: justify;
+}
+
+/* elements */
+
+.ligne
+{
+background: transparent;	
+border-width: 0 0 1px;
+border-color: #113156;
+border-style: solid;
+}
+.gras
+{
+	font-weight: bold;
+}
+.contenu
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+.inversion
+{
+	color: #113156;
+	background-color: white;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+.photo
+{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding: 5%;
+}
+.blanc
+{
+	color: white;
+}	
+
+/* conteneurs */
+
+#global
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+#icones
+{
+	padding: 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#horizontal
+{
+	display: inline-flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+#gauche
+{
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	background-color: #A7C0F2;	
+}
+#droite
+{
+	display: flex;
+	flex-direction: column;
+	background-image: url(images/fusee.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: right top;
+	justify-content: space-around;
+	width: 65%;
+}
+#conteneur
+{
+	background-color: white;
+	opacity: 0.5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 45%;
+
+}
+#conteneur2
+{
+	background-color: white;
+	opacity: 0.5;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 45%;
+}
+#conteneurtitre
+{
+	background-color: white;
+	opacity: 0.5;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap; 
+}
+#coordonnees
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: white;
+	opacity: 0.5;
+	padding-left: 5%;
+}
+#formation
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: white;
+	opacity: 0.5;
+	padding-left: 5%;
+}
+#titresgauche
+{
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: white;
+	opacity: 0.5;
+	margin: 10px;
+}
+
+/* responsive */
+
+@media only screen and (max-device-width: 480px)
+{
+    
+    article
+    {
+    	font-family: "open_sansregular";
+    	font-size: em;
+    	font-size: 1.2em; 
+    }
+    h1, h2, h3, h4
+    {
+    	font-size: 1.1em;
+    }
+    p
+    {
+    	text-align: justify;
+    	font-size: 1.1em;
+    }
+	#conteneur
+	{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.element
+	{
+	border-style: solid;
+	width: 100%;
+	}
+	#gauche
+	{
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 100%;
+	}
+
+	#droite
+	{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 100%;
+	}
+
+	#conteneur2
+	{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	}
+	#horizontal
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: white;
+	opacity: 0.5;
+	width: 100%;
+}
+
+}
