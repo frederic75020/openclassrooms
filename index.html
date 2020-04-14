@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<!-- en-tête de la page -->
+
 		<!-- appel du css -->
 		<link rel="stylesheet" href="style.css" />
 		<!-- jeu de caractères-->
@@ -14,25 +15,36 @@
 		<meta name="viewport" content="width=device-width" />
 	</head>
 	<!-- corps de la page -->
-	<body>		
-		<!-- header -->
-		<header>
-			<section id="header">
-				<section id="headergauche">
-					<img src="images/photo_cv.jpg">
+	<body>	
+		<!-- NAVIGATION MOBILE -->
+		<nav>
+				<section id="navigation">
+					<p>navigation</p>
 				</section>	
 
+		</nav>
+		<!-- fin NAVIGATION MOBILE -->	
+
+		<!-- HEADER -->
+		<header>
+
+			<section id="header">
+
+				<div id="photo">
+					<img src="images/photo_cv.jpg" alt="photo">	
+				</div>
+
 				<section id="headerdroite">	
-					<section class="rapproche">
-						<h1><span class="bleuclair">Frédéric </span>Aurare</h1>
-						<h3>Développeur web freelance</h3>
-					</section>
-						<section class="nom"><section id="demitrait"></section>
-					</section>
-				</section>	
-			</section>
+					<h1><span class="bleuclair">Frédéric</span> Aurare</h1>
+					<h3>Développeur web freelance</h3>
+					<section id="demitrait"></section>
+				</section>
+
+			</section>		
+
 		</header>
-		<!-- fin du header header -->
+		<!-- FIN DU HEADER -->
+
 		<!-- bloc page global -->
 		<section id="blocpage">
 		<!-- colonne de gauche -->	
@@ -42,44 +54,36 @@
 					 <h2 class="inverse">contact</h2>
 				</section>
 				<!--bloc infos de contact-->
-			 	<section id="infos">
-								
-			 			<p id="adresse">Adresse<br />1, rue de la République<br />75010 Paris</p>
-			
-			 		<section class="telephone">	
-			 			<p>Téléphone<br />06 60 00 66 00</p><br />
-			 		</section>
-			 		<section class="site">	
-			 			<p>Site web<br />www.aurare.fr</p><br />
-			 		</section>
-			 		<section class="mail">	
-			 			<p>Email<br />frederic_k@yahoo.fr</p><br />
-			 		</section>
-			 		<section class="skype">
-			 			<p>Skype<br />@frederic_meneghello@yahoo.fr</p>
-			 		</section>	
-			 	</section>
+			 	<ul>				
+			 			<li>Adresse<br />1, rue de la République<br />75010 Paris</li>
+			 			<li>Téléphone<br />06 60 00 66 00</li>	
+			 			<li>Site web<br />www.aurare.fr</li>
+			 			<li>Email<br />frederic_k@yahoo.fr</li>
+			 			<li>Skype<br />@frederic_meneghello@yahoo.fr</li>
+			 	</ul>
 		<!-- titre A PROPOS -->
-			 	<section class="titregauche">
+			 	<div class="titregauche">
 					<h2 class="inverse">à propos de moi</h2>
-				</section>
+				</div>
 		<!-- section A PROPOS-->				
-				<section id="apropos">
-					<article class="margeglobale">Je mets la puissance du digital au service de votre commerce et de votre communication afin d'atteindre vos objectifs. Création de sites clés en main. Amélioration du référencement de votre business. Direction artisitique. Présence omnicanale sur les réseaux sociaux.</article>
-				</section>
+					<article id="apropos">Je mets la puissance du digital au service de votre commerce et de votre communication afin d'atteindre vos objectifs. Création de sites clés en main. Amélioration du référencement de votre business. Direction artisitique. Présence omnicanale sur les réseaux sociaux.
+					</article>
 		<!-- titre loisirs -->			
 				<section class="titregauche">
 					<h2 class="inverse">loisirs</h2>
 				</section>				
 					
-				<section id="loisirs">
+				<div id="loisirs">
 			 			<i class="fab fa-instagram fa-2x" style="color:#47555F"></i>
 			 			<i class="fas fa-camera fa-2x" style="color:#47555F"></i>
 			 			<i class="fas fa-palette fa-2x" style="color:#47555F"></i>
-			 	</section>		 
+			 	</div>
+
 			</aside>
 
 			<section id="coldroite">
+
+		<!-- TITRE DU CV -->		
 
 				<section class="horizontal">
 					<section class="icon">
@@ -90,41 +94,42 @@
 					</section>
 				</section>	
 
-				<section>
-					<section id="traithorizontal"></section>
-				</section>	
+				<div>
+					<div id="traithorizontal1"></div>
+				</div>	
 			
 					
 				<section id="formation1">
-					<div class="bloc">
+					
+					<div class="point1">
 						<i class="far fa-dot-circle" style="color:#CEE0FD"></i>
 					</div>	
-					<section class="rapproche">
-							<h3>depuis 2020<br /><p>Paris</p>
-					</section>	
+					
+					<div class="point2">
+						<h3>depuis 2020</h3><p>Paris</p>
+					</div>	
 
-					<section class="intitule2">
-						<section class="rapproche">
+					<div class="point3">
+						<div>
 							<h2>Openclassrooms</h2>
 							<p>Junior Web Developper</p>
-						</section>
-						<section>
-							<p>Formation : découper, assembler et intégrer tous les éléments d’une maquette graphique en <strong>HTML5 et CSS</strong>. Ajouter du contenu audio et vidéo en HTML5. Animer les pages web avec CSS3.</p></li>
-							</ul>	
-						</section>
-					</section>
+						</div>
+							<p>Formation : découper, assembler et intégrer tous les éléments d’une maquette graphique en <strong>HTML5 et CSS</strong>. Ajouter du contenu audio et vidéo en HTML5. Animer les pages web avec CSS3.</p>
+						</div>
+					</div>
+
 				</section>	
 
 				<section id="formation2">
-					<section class="bloc">
+					<section class="point1">
 						<i class="fas fa-circle" style="color:#CEE0FD"></i>
 					</section>
-					<section class="rapproche">
-							<h3>2003-2005<br /><p>Epinay</p>
+					<section class="point2">
+							<h3>2003-2005</h3><br /><p>Epinay</p>
 					</section>
 
-					<section class="intitule2">
-						<section class="rapproche"><h2>Université Paris 13</h2><p>Master Infocom</p>
+					<section class="point3">
+						<section><h2>Université Paris 13</h2><p>Master Infocom</p>
 						</section>	
 						<p>Formation aux métiers de l’infographie, du multimédia, du numérique, de l’édition, des industries culturelles et créatives, de la communication d’entreprise et des ressources humaines</p>	
 					</section>
@@ -140,66 +145,62 @@
 				</section>
 
 				<section>
-					<section id="traithorizontal"></section>
+					<section id="traithorizontal2"></section>
 				</section>	
-				
-					<section id="experience1">
-						<section class="bloc">
-							<i class="far fa-dot-circle" style="color:#CEE0FD"></i>
-						</section>		
 
-						<section class="rapproche">
-							<h3>2018-2020<br /><p>Paris</p>
-						</section>
+					<!-- EXPERIENCE 1-->
+					<section id="experience1">
+
+						<div class="point1">
+							<i class="far fa-dot-circle" style="color:#CEE0FD"></i>
+						</div>		
+
+						<div class="point2">
+							<h3>2018-2020</h3><br /><p>Paris</p>
+						</div>
 				
-						<section class="intitule2">
-							<section class="rapproche">
+						<div class="point3">
 								<h2>Aurare</h2><h4>Founder and CEO</h4>
-							</section>
-							<section>
 								<p>Créateur et fondateur de la marque DNVB Aurare</p>
-							</section>	
-						</section>	
+						</div>	
+
 					</section>
 
-
+					<!-- EXPERIENCE 2-->
 					<section id="experience2">
-						<section class="bloc">
+
+						<div class="point1">
 							<i class="fas fa-circle" style="color:#CEE0FD"></i>
-						</section>				
-						<section class="rapproche">	
-							<h3>2014-2018<br /><p>Paris</p>
-						</section>		
-						<section class="intitule2">
-							<section class="rapproche">
+						</div>				
+						<div class="point2">	
+							<h3>2014-2018</h3><br /><p>Paris</p>
+						</div>		
+						<div class="point3">
 								<h2>Alta Azzura</h2>	
 								<h4>Retail Manager</h4>
-							</section>
-							<section>	
 								<p>Management des points de vente d'une marque de produits de luxe spécialisée dans le cashmere d'excellence</p>
-							</section>	
-						</section>	
+						</div>	
+
 					</section>
+					<!-- EXPERIENCE 3-->
 	
-				<section id="experience3">
+					<section id="experience3">
 
-					<section class="bloc">
-						<i class="fas fa-circle" style="color:#CEE0FD"></i>
-					</section>
+						<div class="point1">
+							<i class="fas fa-circle" style="color:#CEE0FD"></i>
+						</div>
 
-					<section class="rapproche">
-						<h3>2012-2014<br /><p>Paris</p>
-					</section>
-					<section class="intitule2">	
-						<section class="rapproche">
+						<div class="point2">
+							<h3>2012-2014</h3><p>Paris</p>
+						</div>
+
+						<div class="point3">
 							<h2>Esia Films</h2>	
-							<h4>Chargé de communication</h4>
-						</section>
-						<section>	
+							<h4>Chargé de communication</h4>	
 							<p>Responsable de l'image publique d'une personnalité du monde du cinéma</p>
-						</section>	
+						</div>	
 					</section>
-				</section>	
+					<!-- EXPERIENCE 3-->
 
 				<section class="horizontal">
 					<section>	
@@ -211,16 +212,16 @@
 				</section>	
 
 				<section>
-					<section id="traithorizontal"></section>
+					<section id="traithorizontal3"></section>
 				</section>
 
 				<section id="recommandations">	
 
 					<section id="recommandation1">						
-						<p class="maj">Jean Paul Marceau</p><p>Fondateur, JPM venture<br />Email : jp@jpmventures.fr</p>
+						<h3>Jean Paul Marceau</h3><p>Fondateur, JPM venture<br />Email : jp@jpmventures.fr</p>
 					</section>	
 					<section id="recommandation2">
-						<p class="maj">Franck Azzura</p><p>PDG Alta Azzura<br />Email : franck@altaazzura.com<p>
+						<h3>Franck Azzura</h3><p>PDG Alta Azzura<br />Email : franck@altaazzura.com<p>
 					</section>
 
 				</section>	
@@ -229,4 +230,4 @@
 		</section>	
 	</body>
 
-<html>
+</html>

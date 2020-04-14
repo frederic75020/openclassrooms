@@ -31,17 +31,27 @@ aside
 
 }
 /*PUCES*/	
+/*STYLE GLOBAL LISTE A PUCES SANS ESPACES*/
+ul
+{
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0; 
+}
+/*STYLE DES PUCES ET ESPACEMENT*/
 li
 {
 	font-family: "open_sansregular";
+	font-size: 0.6em;
 	color: #47555F;
-	list-style: none;
+	margin-bottom: 2%;
+	margin-left: 5%
 }
 /*CORPS DE LA PAGE*/	
 body
 {
-	max-width: 827px;
-	max-height: 1170px;
+	width: 827px;
+	height: 1170px;
 }
 /* TITRES */
 h1
@@ -82,9 +92,9 @@ img
 article
 {
 	font-family: "open_sansregular";
-	font-size: 0.5em;
+	font-size: 0.6em;
 	text-align: justify;
-	color: color: #47555F;
+	color: #47555F;
 }
 /* TEXTES */
 p
@@ -102,42 +112,45 @@ p
 
 #header
 {
-	height: 200px;
-	width: 827px;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 }
 
-#headergauche
-{
-	background-color: #CEE0FD;
-	display: flex;
-	height: 200px;
-	width: 250px;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
 #headerdroite
 {
-	height: 200px;
-	width: 527px;
-	line-height: 15px;
-	padding-left: 25px;
-	padding-top: 10px;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
+	width: 68%;
+	margin-bottom: 6%;
+
 }
+/*__________________*/
+
+/* BLOC NAVIGATION */
+
+#navigation
+
+{
+	color: white;
+	background-color: #47555F;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	display: none;
+}
+
 /*__________________*/
 
 /* BLOC GLOBAL BODY*/
 
 #blocpage
 {
-	width: 827px;
 	display: flex;
 	flex-direction: row;
+	margin: auto;
 }
 /* BLOCS COLONNES */
 
@@ -147,7 +160,7 @@ p
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
-	width: 250px;
+	width: 30%;
 }
 #coldroite
 {
@@ -155,20 +168,27 @@ p
 	display: flex;
 	flex-direction: column;
 	width: 527px;
-	padding-left: 25px;
+	padding-left: 2%;
 }
 
 /*__________________*/
 
 /* BLOCS ELEMENTS CV */
 
+#apropos 
+{
+	height: 45%;
+	margin: 5%;
+}
 #loisirs
 {
 	width: 70%;
-	height: 100px;
+	height: 5%;
 	margin: auto;
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
+	align-content: center;
 	padding: 5%;
 	margin-top: 30px;
 }
@@ -176,50 +196,77 @@ p
 #formation1
 {
 	width: 100%;
+	height: 15%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: baseline;
 }
+.point1
+{
+	width: 25px;
+	height: 25px;
+}
+.point2
+{
+	width: 45%;
+	height: auto;
+}
+.point3
+{
+	width: 50%;
+	height: auto;
+}
+
 #formation2
 {
 	width: 100%;
+	height: 15%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: baseline;
 }
 #experience1
 {
 	width: 100%;
+	height: 13%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: baseline;
+
 }
 #experience2
 {
 	width: 100%;
-	height: auto;
+	height: 13%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: baseline;
 }
 #experience3
 {
 	width: 100%;
 	display: flex;
+	height: 13%;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: baseline;
 }
 #photo
 {
-
+	background-color: #CEE0FD;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width: 30%;
 }	
 #infos
 {
-	height: 300px;
+	height: 25%;
 	padding-left: 10px;
 	display: flex;
 	flex-direction: column;
@@ -229,21 +276,22 @@ p
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
+	align-items: flex-start;
 }
 #recommandation1
 {
 	width: 50%;
 	display: flex;
 	flex-direction: column;
-	line-height: 14px;
-}
+	justify-content: center;
+}	
 #recommandation2
 {
 	width: 50%;
 	display: flex;
 	flex-direction: column;
-	line-height: 14px;
+	justify-content: center;
 }
 /*TRAIT SOUS HEADER*/
 #demitrait
@@ -252,7 +300,17 @@ p
 	width: 15%;
 }
 /*TRAIT SOUS TITRES RUBRIQUES*/
-#traithorizontal
+#traithorizontal1
+{
+	border-top: 3px solid #CEE0FD;
+	width: 100%;
+}
+#traithorizontal2
+{
+	border-top: 3px solid #CEE0FD;
+	width: 100%;
+}
+#traithorizontal3
 {
 	border-top: 3px solid #CEE0FD;
 	width: 100%;
@@ -267,6 +325,13 @@ p
 /*__________________*/
 
 /*classes*/
+/*icones points*/
+.point
+{
+	width: 10%;
+	height: auto;
+}
+
 
 /*RAPPROCHEMENT VERTICAL*/
 .rapproche
@@ -283,33 +348,9 @@ p
 .titregauche
 {
 	width: 100%;
-	height: 50px;
+	height: auto;
 }	
-/*HAUTEUR RUBRIQUE CONTACT / INFOS*/
-#adresse
-{
-	height: 45px;
-}
-.telephone
-{
-	height: 35px;
-}
-.site
-{
-	height: 35px;
-}
-.mail
-{
-	height: 35px;
-}
-.skype
-{
-	height: 35px;
-}
-#apropos
-{
-	height: 50%;
-}
+
 /*MISE EN MAJUSCULE*/
 .maj
 {
@@ -333,7 +374,8 @@ p
 /*MARGE AUTOUR*/
 .margeglobale
 {
-	padding: 15px;
+	padding: 5%;
+	margin-bottom: 60%;
 }
 /*MISE EN FORME BLOC TEXTE COLONNE DROITE*/
 .intitule2
@@ -357,13 +399,19 @@ p
 /* MISE EN FORME HORIZONTALE*/
 .horizontal
 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 3%;
+	width: 100%;
+	margin-bottom: 2%;
+	margin-top: 2%;
+
+}
+.horizontal2
+{
 	display: inline-flex;
 	flex-direction: row;
-	align-content: center;
-	flex-wrap: wrap;
-	height: 75px;
-	width: 100%;
-	margin-bottom: 10px;
 }
 /*ESPACE VIDE 15 PIXELS*/
 .espace
@@ -382,10 +430,7 @@ p
 
 @media only screen and (max-device-width: 480px)
 {
-    
-/* typos */
-
-@font-face {
+	@font-face {
     font-family: 'open_sansregular';
     src: url('fonts/OpenSans-Regular-webfont.eot');
     src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -408,24 +453,41 @@ p
     font-style: normal;
 }
 /* STYLES */
+/*ASIDE*/
 aside
 {
 
-}	
+}
+/*PUCES*/	
+/*STYLE GLOBAL LISTE A PUCES SANS ESPACES*/
+ul
+{
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0; 
+}
+/*STYLE DES PUCES ET ESPACEMENT*/
 li
 {
 	font-family: "open_sansregular";
+	font-size: 1.4em;
 	color: #47555F;
-	list-style: none;
-}	
+	margin-bottom: 2%;
+	margin-left: 5%
+}
+/*CORPS DE LA PAGE*/	
 body
+{
+	margin: auto;
+}
+header
 {
 
 }
-
+/* TITRES */
 h1
 {
-	font-size: 3em;
+	font-size: 2.5em;
 	text-transform: uppercase;
 	font-family: "open_sansregular";
 	color: #47555F;
@@ -434,7 +496,7 @@ h2
 {
 	text-transform: uppercase;
 	font-family: "droid_sansbold";
-	font-size: 1.7em;
+	font-size: 1.8em;
 	color: #47555F;
 }
 
@@ -442,7 +504,7 @@ h3
 {
 	text-transform: uppercase;
 	font-family: "open_sansregular";
-	font-size: 1.2em;
+	font-size: 1.7em;
 	color: #47555F;
 }
 h4
@@ -451,33 +513,29 @@ h4
 	font-size: 1.2em;
 	color: #47555F;
 }
+/* IMAGES */	
 img
 {
 	border-radius: 100px;
 	border: #47555F solid 2px;
 }
+/* SECTION ARTICLE */
 article
 {
 	font-family: "open_sansregular";
-	font-size: 2em;
-	text-align: justify;
-	color: color: #47555F;
-}
-
-p
-{
-	font-family: "open_sansregular";
-	font-size: 1.5em;
+	font-size: 1.4em;
 	text-align: justify;
 	color: #47555F;
 }
-article
+/* TEXTES */
+p
 {
 	font-family: "open_sansregular";
-	font-size: 0.7em;
+	font-size: 1em;
 	text-align: justify;
-	color: #47555F;	
+	color: #47555F;
 }
+
 /* BLOCS ET CLASSES */
 /*__________________*/
 
@@ -485,45 +543,65 @@ article
 
 #header
 {
-	height: auto;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
+	position: fixed;
+	width: 100%;
+	height: 450px;
+	background-color: white;
 }
 
 #headergauche
 {
-	width: 100%;
-	background-color: #CEE0FD;
-	display: flex;
-	flex-direction: column;
+	display: inline-flex;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
+	height: auto;
+	width: 30%;
+	height: auto;
+	background-color: #CEE0FD;
 }
 #headerdroite
 {
-	height: auto;
-	line-height: 15px;
-	padding-left: 25px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	background-color: white;
+	width: 50%;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	margin-bottom: 10%;
+	margin-top: 10%;
 }
+/*__________________*/
+
+/* BLOC NAVIGATION */
+
+#navigation
+
+{
+	color: white;
+	background-color: #47555F;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	display: none;
+}
+
 /*__________________*/
 
 /* BLOC GLOBAL BODY*/
 
 #blocpage
 {
-	width: 827px;
+	padding-top: 450px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
+	margin: auto;
 }
 /* BLOCS COLONNES */
 
@@ -547,67 +625,101 @@ article
 
 /* BLOCS ELEMENTS CV */
 
+#apropos 
+{
+	height: 45%;
+	margin: 5%;
+}
 #loisirs
 {
 	width: 70%;
-	height: auto;
+	height: 5%;
 	margin: auto;
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
+	align-content: center;
+	padding: 5%;
+	margin-top: 30px;
 }
 
 #formation1
 {
 	width: 100%;
+	height: 13%;
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
-	flex-direction: column;
 	justify-content: space-between;
+	align-items: baseline;
 }
+.point1
+{
+	width: 25px;
+	height: 25px;
+}
+.point2
+{
+	width: 45%;
+	height: auto;
+}
+.point3
+{
+	width: 50%;
+	height: auto;
+}
+
 #formation2
 {
 	width: 100%;
+	height: 13%;
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-between;
+	align-items: baseline;
 }
 #experience1
 {
 	width: 100%;
+	height: 13%;
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-between;
+	align-items: baseline;
+
 }
 #experience2
 {
 	width: 100%;
-	height: auto;
+	height: 13%;
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-between;
+	align-items: baseline;
 }
 #experience3
 {
 	width: 100%;
 	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
+	height: 13%;
+	flex-direction: row;
 	justify-content: space-between;
+	align-items: baseline;
 }
 #photo
 {
-
+	background-color: white;
+	height: auto;
+	width: 50%;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	margin-top: 5%;
 }	
 #infos
 {
-	height: auto;
+	height: 25%;
 	padding-left: 10px;
 	display: flex;
 	flex-direction: column;
@@ -617,20 +729,22 @@ article
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
+	align-items: flex-start;
 }
 #recommandation1
 {
 	width: 50%;
 	display: flex;
 	flex-direction: column;
-	line-height: 18px;
-}
+	justify-content: center;
+}	
 #recommandation2
 {
 	width: 50%;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 }
 /*TRAIT SOUS HEADER*/
 #demitrait
@@ -639,7 +753,17 @@ article
 	width: 15%;
 }
 /*TRAIT SOUS TITRES RUBRIQUES*/
-#traithorizontal
+#traithorizontal1
+{
+	border-top: 3px solid #CEE0FD;
+	width: 100%;
+}
+#traithorizontal2
+{
+	border-top: 3px solid #CEE0FD;
+	width: 100%;
+}
+#traithorizontal3
 {
 	border-top: 3px solid #CEE0FD;
 	width: 100%;
@@ -654,6 +778,13 @@ article
 /*__________________*/
 
 /*classes*/
+/*icones points*/
+.point
+{
+	width: 10%;
+	height: auto;
+}
+
 
 /*RAPPROCHEMENT VERTICAL*/
 .rapproche
@@ -664,7 +795,7 @@ article
 /*MARGE GAUCHE TITRES RUBRIQUES*/
 .titreformation
 {	
-	margin-left: 10px;
+	margin-left: 2%;
 }
 /*HAUTEUR TITRES COLONNE GAUCHE*/
 .titregauche
@@ -672,32 +803,7 @@ article
 	width: 100%;
 	height: auto;
 }	
-/*HAUTEUR RUBRIQUE CONTACT / INFOS*/
-.adresse
-{
-	height: auto;
-}
-.telephone
-{
-	height: auto;
-}
-.site
-{
-	height: auto;
-}
-.mail
-{
-	height: auto;
-}
-.skype
-{
-	height: auto;
-}
-#apropos
-{
-	height: auto;
-	font-size: 2em;
-}
+
 /*MISE EN MAJUSCULE*/
 .maj
 {
@@ -721,7 +827,8 @@ article
 /*MARGE AUTOUR*/
 .margeglobale
 {
-	padding: 15px;
+	padding: 5%;
+	margin-bottom: 60%;
 }
 /*MISE EN FORME BLOC TEXTE COLONNE DROITE*/
 .intitule2
@@ -745,14 +852,17 @@ article
 /* MISE EN FORME HORIZONTALE*/
 .horizontal
 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 3%;
+	width: 100%;
+	margin-bottom: 5px;
+}
+.horizontal2
+{
 	display: inline-flex;
 	flex-direction: row;
-	align-content: center;
-	flex-wrap: wrap;
-	height: auto;
-	width: 100%;
-	margin-bottom: 10px;
-	margin-top: 10px;
 }
 /*ESPACE VIDE 15 PIXELS*/
 .espace
@@ -764,6 +874,4 @@ article
 {
 	color: #CEE0FD;
 }
-
-
-}
+} 
