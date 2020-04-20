@@ -26,10 +26,7 @@
 }
 /* STYLES */
 /*ASIDE*/
-aside
-{
 
-}
 /*PUCES*/	
 /*STYLE GLOBAL LISTE A PUCES SANS ESPACES*/
 ul
@@ -453,12 +450,8 @@ p
     font-style: normal;
 }
 /* STYLES */
-/*ASIDE*/
-aside
-{
-
-}
-/*PUCES*/	
+/* ASIDE */
+/* PUCES */	
 /*STYLE GLOBAL LISTE A PUCES SANS ESPACES*/
 ul
 {
@@ -466,7 +459,7 @@ ul
 	margin-left: 0;
 	padding-left: 0; 
 }
-/*STYLE DES PUCES ET ESPACEMENT*/
+/* STYLE DES PUCES ET ESPACEMENT */
 li
 {
 	font-family: "open_sansregular";
@@ -479,10 +472,6 @@ li
 body
 {
 	margin: auto;
-}
-header
-{
-
 }
 /* TITRES */
 h1
