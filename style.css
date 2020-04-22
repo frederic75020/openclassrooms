@@ -26,29 +26,21 @@
 }
 /* STYLES */
 /*ASIDE*/
-
-/*PUCES*/	
-/*STYLE GLOBAL LISTE A PUCES SANS ESPACES*/
-ul
+aside
 {
-	list-style: none;
-	margin-left: 0;
-	padding-left: 0; 
+
 }
-/*STYLE DES PUCES ET ESPACEMENT*/
+/*PUCES*/	
 li
 {
 	font-family: "open_sansregular";
-	font-size: 0.6em;
-	color: #47555F;
-	margin-bottom: 2%;
-	margin-left: 5%
+	list-style: none;
 }
 /*CORPS DE LA PAGE*/	
 body
 {
-	width: 827px;
-	height: 1170px;
+	max-width: 827px;
+	max-height: 1170px;
 }
 /* TITRES */
 h1
@@ -89,9 +81,9 @@ img
 article
 {
 	font-family: "open_sansregular";
-	font-size: 0.6em;
+	font-size: 0.7em;
 	text-align: justify;
-	color: #47555F;
+	color: color: #47555F;
 }
 /* TEXTES */
 p
@@ -111,16 +103,28 @@ p
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
+#headergauche
+{
+	background-color: #CEE0FD;
+	display: flex;
+	width: 30%;
+	padding-top: 5%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 #headerdroite
 {
+	padding-top: 5%;
+	line-height: 15px;
+	padding-left: 25px;
+	padding-top: 10px;
 	display: flex;
 	flex-direction: column;
-	width: 68%;
-	margin-bottom: 6%;
-
+	flex-wrap: wrap;
 }
 /*__________________*/
 
@@ -147,7 +151,6 @@ p
 {
 	display: flex;
 	flex-direction: row;
-	margin: auto;
 }
 /* BLOCS COLONNES */
 
@@ -165,27 +168,20 @@ p
 	display: flex;
 	flex-direction: column;
 	width: 527px;
-	padding-left: 2%;
+	padding-left: 25px;
 }
 
 /*__________________*/
 
 /* BLOCS ELEMENTS CV */
 
-#apropos 
-{
-	height: 45%;
-	margin: 5%;
-}
 #loisirs
 {
 	width: 70%;
-	height: 5%;
+	height: 100px;
 	margin: auto;
 	display: flex;
-	flex-direction: row;
 	justify-content: space-around;
-	align-content: center;
 	padding: 5%;
 	margin-top: 30px;
 }
@@ -193,77 +189,50 @@ p
 #formation1
 {
 	width: 100%;
-	height: 15%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: baseline;
 }
-.point1
-{
-	width: 25px;
-	height: 25px;
-}
-.point2
-{
-	width: 45%;
-	height: auto;
-}
-.point3
-{
-	width: 50%;
-	height: auto;
-}
-
 #formation2
 {
 	width: 100%;
-	height: 15%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: baseline;
 }
 #experience1
 {
 	width: 100%;
-	height: 13%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: baseline;
-
 }
 #experience2
 {
 	width: 100%;
-	height: 13%;
+	height: auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: baseline;
 }
 #experience3
 {
 	width: 100%;
 	display: flex;
-	height: 13%;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: baseline;
 }
 #photo
 {
-	background-color: #CEE0FD;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 30%;
 }	
 #infos
 {
-	height: 25%;
+	height: 300px;
 	padding-left: 10px;
 	display: flex;
 	flex-direction: column;
@@ -273,22 +242,21 @@ p
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	align-items: flex-start;
+	justify-content: space-between;
 }
 #recommandation1
 {
 	width: 50%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-}	
+	line-height: 14px;
+}
 #recommandation2
 {
 	width: 50%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	line-height: 14px;
 }
 /*TRAIT SOUS HEADER*/
 #demitrait
@@ -322,13 +290,6 @@ p
 /*__________________*/
 
 /*classes*/
-/*icones points*/
-.point
-{
-	width: 10%;
-	height: auto;
-}
-
 
 /*RAPPROCHEMENT VERTICAL*/
 .rapproche
@@ -345,9 +306,33 @@ p
 .titregauche
 {
 	width: 100%;
-	height: auto;
+	height: 50px;
 }	
-
+/*HAUTEUR RUBRIQUE CONTACT / INFOS*/
+#adresse
+{
+	height: 45px;
+}
+.telephone
+{
+	height: 35px;
+}
+.site
+{
+	height: 35px;
+}
+.mail
+{
+	height: 35px;
+}
+.skype
+{
+	height: 35px;
+}
+#apropos
+{
+	height: 50%;
+}
 /*MISE EN MAJUSCULE*/
 .maj
 {
@@ -371,8 +356,7 @@ p
 /*MARGE AUTOUR*/
 .margeglobale
 {
-	padding: 5%;
-	margin-bottom: 60%;
+	padding: 15px;
 }
 /*MISE EN FORME BLOC TEXTE COLONNE DROITE*/
 .intitule2
@@ -396,14 +380,13 @@ p
 /* MISE EN FORME HORIZONTALE*/
 .horizontal
 {
-	display: flex;
+	display: inline-flex;
 	flex-direction: row;
-	align-items: center;
-	height: 3%;
+	align-content: center;
+	flex-wrap: wrap;
+	height: 75px;
 	width: 100%;
-	margin-bottom: 2%;
-	margin-top: 2%;
-
+	margin-bottom: 10px;
 }
 .horizontal2
 {
@@ -427,7 +410,10 @@ p
 
 @media only screen and (max-device-width: 480px)
 {
-	@font-face {
+    
+/* typos */
+
+@font-face {
     font-family: 'open_sansregular';
     src: url('fonts/OpenSans-Regular-webfont.eot');
     src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -450,33 +436,41 @@ p
     font-style: normal;
 }
 /* STYLES */
-/* ASIDE */
-/* PUCES */	
-/*STYLE GLOBAL LISTE A PUCES SANS ESPACES*/
-ul
+
+header
 {
-	list-style: none;
-	margin-left: 0;
-	padding-left: 0; 
+	position: fixed; 
+	margin: auto;
+	width: 90%;
+}	
+nav
+{
+	position: fixed;
+	width: 90%;
+	height: 15%;
+	margin: auto;
+	color: white;
+	background-color: #47555F;
+	font-size: 0.5em;
 }
-/* STYLE DES PUCES ET ESPACEMENT */
+aside
+{
+
+}	
 li
 {
 	font-family: "open_sansregular";
-	font-size: 1.4em;
-	color: #47555F;
-	margin-bottom: 2%;
-	margin-left: 5%
-}
-/*CORPS DE LA PAGE*/	
+	list-style: none;
+}	
 body
 {
+	width: 90%;
 	margin: auto;
 }
-/* TITRES */
+
 h1
 {
-	font-size: 2.5em;
+	font-size: 1.2em;
 	text-transform: uppercase;
 	font-family: "open_sansregular";
 	color: #47555F;
@@ -485,7 +479,7 @@ h2
 {
 	text-transform: uppercase;
 	font-family: "droid_sansbold";
-	font-size: 1.8em;
+	font-size: 0.7em;
 	color: #47555F;
 }
 
@@ -493,38 +487,41 @@ h3
 {
 	text-transform: uppercase;
 	font-family: "open_sansregular";
-	font-size: 1.7em;
+	font-size: 0.7em;
 	color: #47555F;
 }
 h4
 {
 	font-family: "open_sansregular";
-	font-size: 1.2em;
+	font-size: 0.7em;
 	color: #47555F;
 }
-/* IMAGES */	
 img
 {
 	border-radius: 100px;
 	border: #47555F solid 2px;
 }
-/* SECTION ARTICLE */
 article
 {
 	font-family: "open_sansregular";
-	font-size: 1.4em;
+	font-size: 1.2em;
 	text-align: justify;
-	color: #47555F;
+	color: color: #47555F;
 }
-/* TEXTES */
 p
 {
 	font-family: "open_sansregular";
-	font-size: 1em;
+	font-size: 0.7em;
 	text-align: justify;
 	color: #47555F;
 }
-
+article
+{
+	font-family: "open_sansregular";
+	font-size: 0.7em;
+	text-align: justify;
+	color: #47555F;	
+}
 /* BLOCS ET CLASSES */
 /*__________________*/
 
@@ -532,36 +529,35 @@ p
 
 #header
 {
+	width: 100%;
+	margin: auto;
 	display: flex;
 	flex-direction: row;
-	position: fixed;
-	width: 100%;
-	height: 450px;
-	background-color: white;
+	flex-wrap: wrap;
+	margin-top: 10%;
 }
 
 #headergauche
 {
-	display: inline-flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+	margin: auto;
+	width: 100%;
 	height: auto;
-	width: 30%;
-	height: auto;
+	padding-top: 8%;
+	padding-bottom: 8%;
 	background-color: #CEE0FD;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 #headerdroite
 {
+	height: auto;
+	width: 100%;
+	margin: auto;
 	background-color: white;
-	width: 50%;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-	margin-bottom: 10%;
-	margin-top: 10%;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 /*__________________*/
 
@@ -570,170 +566,133 @@ p
 #navigation
 
 {
-	color: white;
-	background-color: #47555F;
-	padding-top: 2%;
-	padding-bottom: 2%;
+	width: 80%;
+	margin: auto;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	display: none;
+	flex-wrap: wrap;
+	align-content: space-around;
 }
 
 /*__________________*/
-
 /* BLOC GLOBAL BODY*/
 
 #blocpage
 {
-	padding-top: 450px;
+	width: 100%;
+	margin: auto;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin: auto;
 }
 /* BLOCS COLONNES */
 
 #colgauche
 {
+	padding-top: 400px;
+	width: 100%;
+	margin: auto;
 	background-color: #CEE0FD;
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
-	width: 100%;
 }
 #coldroite
 {
+	width: 100%
 	background-color: white;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 }
-
 /*__________________*/
 
 /* BLOCS ELEMENTS CV */
 
-#apropos 
-{
-	height: 45%;
-	margin: 5%;
-}
 #loisirs
 {
 	width: 70%;
-	height: 5%;
+	height: auto;
 	margin: auto;
 	display: flex;
-	flex-direction: row;
 	justify-content: space-around;
-	align-content: center;
-	padding: 5%;
-	margin-top: 30px;
 }
 
 #formation1
 {
-	width: 100%;
-	height: 13%;
+	width: 90%;
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: baseline;
+	flex-direction:row;
+	justify-content: flex-start;
 }
-.point1
-{
-	width: 25px;
-	height: 25px;
-}
-.point2
-{
-	width: 45%;
-	height: auto;
-}
-.point3
-{
-	width: 50%;
-	height: auto;
-}
-
 #formation2
 {
-	width: 100%;
-	height: 13%;
+	width: 90%;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: space-between;
-	align-items: baseline;
+	justify-content: flex-start;
 }
 #experience1
 {
-	width: 100%;
-	height: 13%;
+	width: 90%;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: space-between;
-	align-items: baseline;
-
+	justify-content: flex-start;
 }
 #experience2
 {
-	width: 100%;
-	height: 13%;
+	width: 90%;
+	height: auto;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: space-between;
-	align-items: baseline;
+	justify-content: flex-start;
 }
 #experience3
 {
-	width: 100%;
+	width: 90%;
 	display: flex;
-	height: 13%;
 	flex-direction: row;
-	justify-content: space-between;
-	align-items: baseline;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 }
 #photo
 {
-	background-color: white;
-	height: auto;
-	width: 50%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	margin-top: 5%;
-}	
-#infos
-{
-	height: 25%;
-	padding-left: 10px;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+}	
+#infos
+{
+	height: auto;
+	width: 100%;
+	padding-left: 3%;
+	padding-bottom: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 #recommandations
 {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: flex-start;
+	flex-direction: column;
 }
 #recommandation1
 {
 	width: 50%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-}	
+	align-content: flex-start;
+}
 #recommandation2
 {
 	width: 50%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 }
 /*TRAIT SOUS HEADER*/
 #demitrait
@@ -742,17 +701,17 @@ p
 	width: 15%;
 }
 /*TRAIT SOUS TITRES RUBRIQUES*/
-#traithorizontal1
+.traithorizontal1
 {
 	border-top: 3px solid #CEE0FD;
 	width: 100%;
 }
-#traithorizontal2
+.traithorizontal2
 {
 	border-top: 3px solid #CEE0FD;
 	width: 100%;
 }
-#traithorizontal3
+.traithorizontal3"éze
 {
 	border-top: 3px solid #CEE0FD;
 	width: 100%;
@@ -767,24 +726,16 @@ p
 /*__________________*/
 
 /*classes*/
-/*icones points*/
-.point
-{
-	width: 10%;
-	height: auto;
-}
-
 
 /*RAPPROCHEMENT VERTICAL*/
 .rapproche
 {
 	margin-top: 5px;
-	line-height: 5px;
 }
 /*MARGE GAUCHE TITRES RUBRIQUES*/
 .titreformation
 {	
-	margin-left: 2%;
+	margin-left: 10px;
 }
 /*HAUTEUR TITRES COLONNE GAUCHE*/
 .titregauche
@@ -792,7 +743,36 @@ p
 	width: 100%;
 	height: auto;
 }	
-
+/*HAUTEUR RUBRIQUE CONTACT / INFOS*/
+.adresse
+{
+	width: 100%;
+	margin: auto;
+}
+.telephone
+{
+	width: 100%;
+	margin: auto;
+}
+.site
+{
+	width: 100%;
+	margin: auto;
+}
+.mail
+{
+	width: 100%;
+	margin: auto;
+}
+.skype
+{
+	width: 100%;
+	margin: auto;
+}
+#apropos
+{
+	height: auto;
+}
 /*MISE EN MAJUSCULE*/
 .maj
 {
@@ -816,14 +796,12 @@ p
 /*MARGE AUTOUR*/
 .margeglobale
 {
-	padding: 5%;
-	margin-bottom: 60%;
+	padding: 15px;
 }
 /*MISE EN FORME BLOC TEXTE COLONNE DROITE*/
 .intitule2
 {	
-	width: 70%;
-	padding-left: 10px;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -834,24 +812,18 @@ p
 	text-transform: uppercase;
 	color: #CEE0FD;
 	background-color: #47555F;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 2%;
+	padding-bottom: 2%;
 	text-align: center;
 }
 /* MISE EN FORME HORIZONTALE*/
 .horizontal
 {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	height: 3%;
 	width: 100%;
-	margin-bottom: 5px;
-}
-.horizontal2
-{
-	display: inline-flex;
-	flex-direction: row;
+	margin: auto;
+	height: auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 /*ESPACE VIDE 15 PIXELS*/
 .espace
@@ -863,4 +835,6 @@ p
 {
 	color: #CEE0FD;
 }
-} 
+
+
+}
