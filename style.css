@@ -101,9 +101,11 @@ p
 
 #header
 {
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	margin: auto;
 }
 
 #headergauche
@@ -122,9 +124,10 @@ p
 	line-height: 15px;
 	padding-left: 25px;
 	padding-top: 10px;
+	margin-bottom: 5%;
 	display: flex;
-	flex-direction: column;
 	flex-wrap: wrap;
+	flex-direction: column;
 }
 /*__________________*/
 
@@ -158,7 +161,6 @@ p
 {
 	background-color: #CEE0FD;
 	display: flex;
-	justify-content: space-around;
 	flex-direction: column;
 	width: 30%;
 }
@@ -232,11 +234,19 @@ p
 }	
 #infos
 {
-	height: 300px;
-	padding-left: 10px;
+	height: 25%;
+	padding-left: 5%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+}
+.element
+{
+	height: auto;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	
 }
 #recommandations
 {
@@ -511,7 +521,7 @@ article
 p
 {
 	font-family: "open_sansregular";
-	font-size: 0.7em;
+	font-size: 0.8em;
 	text-align: justify;
 	color: #47555F;
 }
@@ -548,16 +558,17 @@ article
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	align-items: center;
 }
 #headerdroite
 {
-	height: auto;
 	width: 100%;
 	margin: auto;
 	background-color: white;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
+	align-items: center;
 }
 /*__________________*/
 
@@ -589,7 +600,7 @@ article
 
 #colgauche
 {
-	padding-top: 400px;
+	padding-top: 450px;
 	width: 100%;
 	margin: auto;
 	background-color: #CEE0FD;
@@ -599,7 +610,8 @@ article
 }
 #coldroite
 {
-	width: 100%
+	width: 100%;
+	margin: auto;
 	background-color: white;
 	display: flex;
 	flex-direction: column;
@@ -619,7 +631,7 @@ article
 
 #formation1
 {
-	width: 90%;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction:row;
@@ -627,7 +639,7 @@ article
 }
 #formation2
 {
-	width: 90%;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -711,7 +723,7 @@ article
 	border-top: 3px solid #CEE0FD;
 	width: 100%;
 }
-.traithorizontal3"éze
+.traithorizontal3
 {
 	border-top: 3px solid #CEE0FD;
 	width: 100%;
