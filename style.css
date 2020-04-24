@@ -25,17 +25,14 @@
     font-style: normal;
 }
 /* STYLES */
-/*ASIDE*/
-aside
-{
 
-}
 /*PUCES*/	
 li
 {
 	font-family: "open_sansregular";
-	color: #47555F;
 	list-style: none;
+	font-size: 0.7em;
+	color: #47555F;
 }
 /*CORPS DE LA PAGE*/	
 body
@@ -71,6 +68,7 @@ h4
 	font-family: "open_sansregular";
 	font-size: 0.7em;
 	color: #47555F;
+	text-transform: uppercase;
 }
 /* IMAGES */	
 img
@@ -82,7 +80,7 @@ img
 article
 {
 	font-family: "open_sansregular";
-	font-size: 0.5em;
+	font-size: 0.7em;
 	text-align: justify;
 	color: color: #47555F;
 }
@@ -90,7 +88,7 @@ article
 p
 {
 	font-family: "open_sansregular";
-	font-size: 0.6em;
+	font-size: 0.7em;
 	text-align: justify;
 	color: #47555F;
 }
@@ -102,32 +100,32 @@ p
 
 #header
 {
-	height: 200px;
-	width: 827px;
+	width: 100%;
+	height: 10%;
 	display: flex;
 	flex-direction: row;
+	justify-content: flex-start;
+	margin: auto;
 }
 
 #headergauche
 {
 	background-color: #CEE0FD;
 	display: flex;
-	height: 200px;
-	width: 250px;
+	width: 30%;
+	padding-top: 2%;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 #headerdroite
 {
-	height: 200px;
-	width: 527px;
-	line-height: 15px;
-	padding-left: 25px;
-	padding-top: 10px;
+	padding-top: 2%;
+	padding-left: 5%;
+	margin-bottom: 10%;
 	display: flex;
-	flex-direction: column;
 	flex-wrap: wrap;
+	flex-direction: column;
 }
 /*__________________*/
 
@@ -135,7 +133,6 @@ p
 
 #blocpage
 {
-	width: 827px;
 	display: flex;
 	flex-direction: row;
 }
@@ -145,9 +142,8 @@ p
 {
 	background-color: #CEE0FD;
 	display: flex;
-	justify-content: space-around;
 	flex-direction: column;
-	width: 250px;
+	width: 30%;
 }
 #coldroite
 {
@@ -162,10 +158,15 @@ p
 
 /* BLOCS ELEMENTS CV */
 
+#apropos
+{
+	height: 40%;
+}
+
 #loisirs
 {
-	width: 70%;
-	height: 100px;
+	width: 80%;
+	height: 4%;
 	margin: auto;
 	display: flex;
 	justify-content: space-around;
@@ -175,24 +176,26 @@ p
 
 #formation1
 {
+	margin-top: 2%;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 #formation2
 {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 #experience1
 {
+	margin-top: 2%;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 #experience2
 {
@@ -200,18 +203,17 @@ p
 	height: auto;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 #experience3
 {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 #photo
 {
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -219,31 +221,35 @@ p
 }	
 #infos
 {
-	height: 300px;
-	padding-left: 10px;
+	padding-top: 10%;
+	height: 30%;
+	padding-left: 5%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 }
+
 #recommandations
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	margin-bottom: 5%;
 }
 #recommandation1
 {
 	width: 50%;
+	line-height: 1px;
 	display: flex;
 	flex-direction: column;
-	line-height: 14px;
+	justify-content: flex-start;
 }
 #recommandation2
 {
 	width: 50%;
+	line-height: 1px;
 	display: flex;
 	flex-direction: column;
-	line-height: 14px;
+	justify-content: space-between;
 }
 /*TRAIT SOUS HEADER*/
 #demitrait
@@ -251,33 +257,40 @@ p
 	border-top: 3px solid #CEE0FD;
 	width: 15%;
 }
-/*TRAIT SOUS TITRES RUBRIQUES*/
-#traithorizontal
+/*TRAITS SOUS TITRES RUBRIQUES*/
+#traithorizontal1
 {
 	border-top: 3px solid #CEE0FD;
 	width: 100%;
 }
-#titrecv
+#traithorizontal2
 {
-	height: 250px;
-	display: inline-flex;
-	flex-direction: column;
-	align-content: flex-start;
+	border-top: 3px solid #CEE0FD;
+	width: 100%;
+}
+#traithorizontal3
+{
+	border-top: 3px solid #CEE0FD;
+	width: 100%;
 }
 /*__________________*/
 
 /*classes*/
 
-/*RAPPROCHEMENT VERTICAL*/
-.rapproche
+/* INFOS CONTACT SANS MARGES */
+
+.element
 {
-	margin-top: 5px;
-	line-height: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	display: flex;
+	flex-direction: column;	
 }
+
 /*MARGE GAUCHE TITRES RUBRIQUES*/
 .titreformation
 {	
-	margin-left: 2%;
+	margin-left: 3%;
 }
 /*HAUTEUR TITRES COLONNE GAUCHE*/
 .titregauche
@@ -285,31 +298,7 @@ p
 	width: 100%;
 	height: 50px;
 }	
-/*HAUTEUR RUBRIQUE CONTACT / INFOS*/
-#adresse
-{
-	height: 45px;
-}
-.telephone
-{
-	height: 35px;
-}
-.site
-{
-	height: 35px;
-}
-.mail
-{
-	height: 35px;
-}
-.skype
-{
-	height: 35px;
-}
-#apropos
-{
-	height: 50%;
-}
+
 /*MISE EN MAJUSCULE*/
 .maj
 {
@@ -318,11 +307,22 @@ p
 .bloc
 {
 	width: 10%;
-	margin-top: 15px;
+	padding-top: 1%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-
+}
+/* AFFICHAGE DATES */
+.date
+{
+	width:25%;
+	line-height: 6px;
+}
+/* AFFICHAGE POSTE */
+.poste
+{
+	width: 100%;
+	line-height: 6px;
 }
 /*MARGE GAUCHE*/
 .margegauche
@@ -338,10 +338,12 @@ p
 /*MISE EN FORME BLOC TEXTE COLONNE DROITE*/
 .intitule2
 {	
+	margin: 0px;
 	width: 70%;
-	padding-left: 10px;
+	padding-left: 5%;
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	flex-direction: row;
 	justify-content: flex-start;
 }
 /* TYPO TITRE GAUCHE MAJUSCULE INVERSE */
@@ -359,11 +361,15 @@ p
 {
 	display: inline-flex;
 	flex-direction: row;
-	align-content: center;
 	flex-wrap: wrap;
+	align-items: center;
 	height: 75px;
 	width: 100%;
-	margin-bottom: 10px;
+}
+.horizontal2
+{
+	display: inline-flex;
+	flex-direction: row;
 }
 /*ESPACE VIDE 15 PIXELS*/
 .espace
@@ -408,6 +414,13 @@ p
     font-style: normal;
 }
 /* STYLES */
+
+header
+{
+	position: fixed; 
+	margin: auto;
+	width: 90%;
+}	
 aside
 {
 
@@ -415,17 +428,18 @@ aside
 li
 {
 	font-family: "open_sansregular";
-	color: #47555F;
 	list-style: none;
+	color: #47555F;
 }	
 body
 {
-
+	width: 90%;
+	margin: auto;
 }
 
 h1
 {
-	font-size: 3em;
+	font-size: 1.2em;
 	text-transform: uppercase;
 	font-family: "open_sansregular";
 	color: #47555F;
@@ -434,7 +448,7 @@ h2
 {
 	text-transform: uppercase;
 	font-family: "droid_sansbold";
-	font-size: 1.7em;
+	font-size: 0.7em;
 	color: #47555F;
 }
 
@@ -442,13 +456,13 @@ h3
 {
 	text-transform: uppercase;
 	font-family: "open_sansregular";
-	font-size: 1.2em;
+	font-size: 0.7em;
 	color: #47555F;
 }
 h4
 {
 	font-family: "open_sansregular";
-	font-size: 1.2em;
+	font-size: 0.7em;
 	color: #47555F;
 }
 img
@@ -459,15 +473,14 @@ img
 article
 {
 	font-family: "open_sansregular";
-	font-size: 2em;
+	font-size: 1.2em;
 	text-align: justify;
 	color: color: #47555F;
 }
-
 p
 {
 	font-family: "open_sansregular";
-	font-size: 1.5em;
+	font-size: 0.8em;
 	text-align: justify;
 	color: #47555F;
 }
@@ -485,64 +498,70 @@ article
 
 #header
 {
-	height: auto;
+	width: 100%;
+	margin: auto;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
 }
 
 #headergauche
 {
+	margin: auto;
 	width: 100%;
+	height: auto;
+	padding-top: 4%;
+	padding-bottom: 4%;
 	background-color: #CEE0FD;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
-	align-content: center;
 }
 #headerdroite
 {
-	height: auto;
-	line-height: 15px;
-	padding-left: 25px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	width: 100%;
+	padding-bottom: 2%;
+	background-color: white;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+	align-items: center;
 }
 /*__________________*/
 
+/*__________________*/
 /* BLOC GLOBAL BODY*/
 
 #blocpage
 {
-	width: 827px;
+	width: 90%;
+	margin: auto;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
 }
 /* BLOCS COLONNES */
 
 #colgauche
 {
+	padding-top: 350px;
+	width: 100%;
+	margin: auto;
 	background-color: #CEE0FD;
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
-	width: 100%;
 }
 #coldroite
 {
+	width: 100%;
+	margin: 0px;
+	padding-left: 0px;
 	background-color: white;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 }
-
 /*__________________*/
 
 /* BLOCS ELEMENTS CV */
@@ -561,24 +580,23 @@ article
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: space-between;
+	flex-direction:column;
 }
 #formation2
 {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: space-between;
+	flex-direction: row;
+	justify-content: flex-start;
 }
 #experience1
 {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: space-between;
+	flex-direction: row;
+	justify-content: flex-start;
 }
 #experience2
 {
@@ -586,16 +604,16 @@ article
 	height: auto;
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: space-between;
+	flex-direction: row;
+	justify-content: flex-start;
 }
 #experience3
 {
 	width: 100%;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 #photo
 {
@@ -608,27 +626,29 @@ article
 #infos
 {
 	height: auto;
-	padding-left: 10px;
+	padding: 0px;
+	margin-left: 2%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 }
 #recommandations
 {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
 }
 #recommandation1
 {
-	width: 50%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	line-height: 18px;
+	align-content: flex-start;
 }
 #recommandation2
 {
-	width: 50%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
@@ -639,27 +659,42 @@ article
 	width: 15%;
 }
 /*TRAIT SOUS TITRES RUBRIQUES*/
-#traithorizontal
+.traithorizontal1
 {
 	border-top: 3px solid #CEE0FD;
 	width: 100%;
 }
-#titrecv
+.traithorizontal2
 {
-	height: 250px;
-	display: inline-flex;
-	flex-direction: column;
-	align-content: flex-start;
+	border-top: 3px solid #CEE0FD;
+	width: 100%;
 }
+.traithorizontal3
+{
+	border-top: 3px solid #CEE0FD;
+	width: 100%;
+}
+
 /*__________________*/
 
 /*classes*/
 
-/*RAPPROCHEMENT VERTICAL*/
-.rapproche
+/* AFFICHAGE DATES */
+.date
 {
-	margin-top: 5px;
-	line-height: 5px;
+	background-color: #CEE0FD;
+	width: 100%;
+	line-height: 8px;
+	display: inline-flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+/* AFFICHAGE POSTE */
+.poste
+{
+	width: 100%;
+	line-height: 8%;
 }
 /*MARGE GAUCHE TITRES RUBRIQUES*/
 .titreformation
@@ -672,32 +707,6 @@ article
 	width: 100%;
 	height: auto;
 }	
-/*HAUTEUR RUBRIQUE CONTACT / INFOS*/
-.adresse
-{
-	height: auto;
-}
-.telephone
-{
-	height: auto;
-}
-.site
-{
-	height: auto;
-}
-.mail
-{
-	height: auto;
-}
-.skype
-{
-	height: auto;
-}
-#apropos
-{
-	height: auto;
-	font-size: 2em;
-}
 /*MISE EN MAJUSCULE*/
 .maj
 {
@@ -710,6 +719,7 @@ article
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	display: none;
 
 }
 /*MARGE GAUCHE*/
@@ -726,8 +736,9 @@ article
 /*MISE EN FORME BLOC TEXTE COLONNE DROITE*/
 .intitule2
 {	
-	width: 70%;
-	padding-left: 10px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -738,19 +749,18 @@ article
 	text-transform: uppercase;
 	color: #CEE0FD;
 	background-color: #47555F;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 2%;
+	padding-bottom: 2%;
 	text-align: center;
 }
 /* MISE EN FORME HORIZONTALE*/
 .horizontal
 {
-	display: inline-flex;
-	flex-direction: row;
-	align-content: center;
-	flex-wrap: wrap;
-	height: auto;
 	width: 100%;
+	margin: auto;
+	height: auto;
+	display: inline-flex;
+	align-items: center;
 	margin-bottom: 10px;
 	margin-top: 10px;
 }
@@ -764,6 +774,5 @@ article
 {
 	color: #CEE0FD;
 }
-
 
 }

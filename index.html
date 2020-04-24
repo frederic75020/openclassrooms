@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<!-- en-tête de la page -->
+
 		<!-- appel du css -->
 		<link rel="stylesheet" href="style.css" />
 		<!-- jeu de caractères-->
@@ -14,25 +15,25 @@
 		<meta name="viewport" content="width=device-width" />
 	</head>
 	<!-- corps de la page -->
-	<body>		
-		<!-- header -->
+	<body>	
+		<!-- HEADER -->
 		<header>
-			<section id="header">
+			<!-- header gauche / haut -->
+			<section id="header">				
 				<section id="headergauche">
-					<img src="images/photo_cv.jpg">
+					<img src="images/photo_cv.jpg" alt="photo">
 				</section>	
-
-				<section id="headerdroite">	
-					<section class="rapproche">
-						<h1><span class="bleuclair">Frédéric </span>Aurare</h1>
-						<h3>Développeur web freelance</h3>
+			<!-- header droite / bas -->	
+				<section id="headerdroite">
+					<section>
+					<h1><span class="bleuclair">Frédéric</span> Aurare</h1>
 					</section>
-						<section class="nom"><section id="demitrait"></section>
-					</section>
-				</section>	
+					<h3>Développeur web freelance</h3>
+					<section id="demitrait">	</section>
 			</section>
 		</header>
-		<!-- fin du header header -->
+		<!-- FIN DU HEADER -->
+
 		<!-- bloc page global -->
 		<section id="blocpage">
 		<!-- colonne de gauche -->	
@@ -42,23 +43,14 @@
 					 <h2 class="inverse">contact</h2>
 				</section>
 				<!--bloc infos de contact-->
-			 	<section id="infos">
-								
-			 			<p id="adresse">Adresse<br />1, rue de la République<br />75010 Paris</p>
-			
-			 		<section class="telephone">	
-			 			<p>Téléphone<br />06 60 00 66 00</p><br />
-			 		</section>
-			 		<section class="site">	
-			 			<p>Site web<br />www.aurare.fr</p><br />
-			 		</section>
-			 		<section class="mail">	
-			 			<p>Email<br />frederic_k@yahoo.fr</p><br />
-			 		</section>
-			 		<section class="skype">
-			 			<p>Skype<br />@frederic_meneghello@yahoo.fr</p>
-			 		</section>	
-			 	</section>
+			 	<ul id="infos">				
+			 		<li class="element">Adresse<br />1, rue de la République<br />75010 Paris</li>
+			 		<li class="element">Téléphone<br />06 60 00 66 00</li>
+			 		<li class="element">Site web<br />www.aurare.fr</li>
+			 		<li class="element">Email<br />frederic_k@yahoo.fr</li>
+			 		<li class="element">Skype<br />@frederic_meneghello@yahoo.fr</li>	
+			 	</ul>
+				 
 		<!-- titre A PROPOS -->
 			 	<section class="titregauche">
 					<h2 class="inverse">à propos de moi</h2>
@@ -70,8 +62,8 @@
 		<!-- titre loisirs -->			
 				<section class="titregauche">
 					<h2 class="inverse">loisirs</h2>
-				</section>				
-					
+				</section>	
+		<!-- icones rubrique loisirs -->							
 				<section id="loisirs">
 			 			<i class="fab fa-instagram fa-2x" style="color:#47555F"></i>
 			 			<i class="fas fa-camera fa-2x" style="color:#47555F"></i>
@@ -82,7 +74,7 @@
 			<section id="coldroite">
 
 				<section class="horizontal">
-					<section class="icon">
+					<section class="bloc">
 						<i class="fas fa-graduation-cap fa-2x" style="color:#CEE0FD"></i>
 					</section>
 					<section class="titreformation">	
@@ -91,7 +83,7 @@
 				</section>	
 
 				<section>
-					<section id="traithorizontal"></section>
+					<section id="traithorizontal1"></section>
 				</section>	
 			
 					
@@ -99,32 +91,34 @@
 					<div class="bloc">
 						<i class="far fa-dot-circle" style="color:#CEE0FD"></i>
 					</div>	
-					<section class="rapproche">
-							<h3>depuis 2020<br /><p>Paris</p>
+					<section class="date">
+							<h3>depuis 2020</h3>
+							<p>Paris</p>
 					</section>	
 
 					<section class="intitule2">
-						<section class="rapproche">
+						<section class="poste">
 							<h2>Openclassrooms</h2>
-							<p>Junior Web Developper</p>
+							<h4>Junior Web Developper</h4>
 						</section>
 						<section>
-							<p>Formation : découper, assembler et intégrer tous les éléments d’une maquette graphique en <strong>HTML5 et CSS</strong>. Ajouter du contenu audio et vidéo en HTML5. Animer les pages web avec CSS3.</p></li>
-							</ul>	
+							<p>Formation : découper, assembler et intégrer tous les éléments d’une maquette graphique en <strong>HTML5 et CSS</strong>. Ajouter du contenu audio et vidéo en HTML5. Animer les pages web avec CSS3.</p>
 						</section>
 					</section>
 				</section>	
 
 				<section id="formation2">
-					<section class="bloc">
+					<div class="bloc">
 						<i class="fas fa-circle" style="color:#CEE0FD"></i>
-					</section>
-					<section class="rapproche">
-							<h3>2003-2005<br /><p>Epinay</p>
+					</div>
+					<section class="date">
+							<h3>2003-2005</h3><p>Epinay</p>
 					</section>
 
 					<section class="intitule2">
-						<section class="rapproche"><h2>Université Paris 13</h2><p>Master Infocom</p>
+						<section class="poste">
+							<h2>Université Paris 13</h2>
+							<h4>Master Infocom</h4>
 						</section>	
 						<p>Formation aux métiers de l’infographie, du multimédia, du numérique, de l’édition, des industries culturelles et créatives, de la communication d’entreprise et des ressources humaines</p>	
 					</section>
@@ -140,20 +134,21 @@
 				</section>
 
 				<section>
-					<section id="traithorizontal"></section>
+					<section id="traithorizontal2"></section>
 				</section>	
 				
 					<section id="experience1">
-						<section class="bloc">
+						<div class="bloc">
 							<i class="far fa-dot-circle" style="color:#CEE0FD"></i>
-						</section>		
+						</div>		
 
-						<section class="rapproche">
-							<h3>2018-2020<br /><p>Paris</p>
+						<section class="date">
+							<h3>2018-2020</h3>
+							<p>Paris</p>
 						</section>
 				
 						<section class="intitule2">
-							<section class="rapproche">
+							<section class="poste">
 								<h2>Aurare</h2><h4>Founder and CEO</h4>
 							</section>
 							<section>
@@ -164,14 +159,14 @@
 
 
 					<section id="experience2">
-						<section class="bloc">
+						<div class="bloc">
 							<i class="fas fa-circle" style="color:#CEE0FD"></i>
-						</section>				
-						<section class="rapproche">	
-							<h3>2014-2018<br /><p>Paris</p>
+						</div>				
+						<section class="date">	
+							<h3>2014-2018</h3><p>Paris</p>
 						</section>		
 						<section class="intitule2">
-							<section class="rapproche">
+							<section class="poste">
 								<h2>Alta Azzura</h2>	
 								<h4>Retail Manager</h4>
 							</section>
@@ -187,11 +182,11 @@
 						<i class="fas fa-circle" style="color:#CEE0FD"></i>
 					</section>
 
-					<section class="rapproche">
-						<h3>2012-2014<br /><p>Paris</p>
+					<section class="date">
+						<h3>2012-2014</h3><p>Paris</p>
 					</section>
 					<section class="intitule2">	
-						<section class="rapproche">
+						<section class="poste">
 							<h2>Esia Films</h2>	
 							<h4>Chargé de communication</h4>
 						</section>
@@ -211,16 +206,20 @@
 				</section>	
 
 				<section>
-					<section id="traithorizontal"></section>
+					<section id="traithorizontal3"></section>
 				</section>
 
 				<section id="recommandations">	
 
 					<section id="recommandation1">						
-						<p class="maj">Jean Paul Marceau</p><p>Fondateur, JPM venture<br />Email : jp@jpmventures.fr</p>
+						<h4>Jean Paul Marceau</h4>
+						<p>Fondateur, JPM venture</p>
+						<p>E-mail : jp@jpmventures.fr</p>
 					</section>	
 					<section id="recommandation2">
-						<p class="maj">Franck Azzura</p><p>PDG Alta Azzura<br />Email : franck@altaazzura.com<p>
+						<h4>Franck Azzura</h4>
+						<p>PDG Alta Azzura</p>
+						<p>Email : franck@altaazzura.com</p>
 					</section>
 
 				</section>	
@@ -229,4 +228,4 @@
 		</section>	
 	</body>
 
-<html>
+</html>
