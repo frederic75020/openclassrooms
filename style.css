@@ -32,6 +32,7 @@ li
 	font-family: "open_sansregular";
 	list-style: none;
 	font-size: 0.7em;
+	color: #47555F;
 }
 /*CORPS DE LA PAGE*/	
 body
@@ -67,6 +68,7 @@ h4
 	font-family: "open_sansregular";
 	font-size: 0.7em;
 	color: #47555F;
+	text-transform: uppercase;
 }
 /* IMAGES */	
 img
@@ -231,21 +233,23 @@ p
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	margin-bottom: 5%;
 }
 #recommandation1
 {
 	width: 50%;
+	line-height: 1px;
 	display: flex;
 	flex-direction: column;
-	line-height: 14px;
+	justify-content: flex-start;
 }
 #recommandation2
 {
 	width: 50%;
+	line-height: 1px;
 	display: flex;
 	flex-direction: column;
-	line-height: 14px;
+	justify-content: space-between;
 }
 /*TRAIT SOUS HEADER*/
 #demitrait
@@ -357,8 +361,8 @@ p
 {
 	display: inline-flex;
 	flex-direction: row;
-	align-content: center;
 	flex-wrap: wrap;
+	align-items: center;
 	height: 75px;
 	width: 100%;
 }
@@ -417,16 +421,6 @@ header
 	margin: auto;
 	width: 90%;
 }	
-nav
-{
-	position: fixed;
-	width: 90%;
-	height: 15%;
-	margin: auto;
-	color: white;
-	background-color: #47555F;
-	font-size: 0.5em;
-}
 aside
 {
 
@@ -435,6 +429,7 @@ li
 {
 	font-family: "open_sansregular";
 	list-style: none;
+	color: #47555F;
 }	
 body
 {
@@ -508,7 +503,6 @@ article
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin-top: 10%;
 }
 
 #headergauche
@@ -516,8 +510,8 @@ article
 	margin: auto;
 	width: 100%;
 	height: auto;
-	padding-top: 8%;
-	padding-bottom: 8%;
+	padding-top: 4%;
+	padding-bottom: 4%;
 	background-color: #CEE0FD;
 	display: flex;
 	flex-direction: column;
@@ -527,7 +521,7 @@ article
 #headerdroite
 {
 	width: 100%;
-	margin: auto;
+	padding-bottom: 2%;
 	background-color: white;
 	display: flex;
 	flex-direction: column;
@@ -536,25 +530,12 @@ article
 }
 /*__________________*/
 
-/* BLOC NAVIGATION */
-
-#navigation
-
-{
-	width: 80%;
-	margin: auto;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-content: space-around;
-}
-
 /*__________________*/
 /* BLOC GLOBAL BODY*/
 
 #blocpage
 {
-	width: 100%;
+	width: 90%;
 	margin: auto;
 	display: flex;
 	flex-direction: row;
@@ -564,7 +545,7 @@ article
 
 #colgauche
 {
-	padding-top: 450px;
+	padding-top: 350px;
 	width: 100%;
 	margin: auto;
 	background-color: #CEE0FD;
@@ -575,7 +556,8 @@ article
 #coldroite
 {
 	width: 100%;
-	margin: auto;
+	margin: 0px;
+	padding-left: 0px;
 	background-color: white;
 	display: flex;
 	flex-direction: column;
@@ -598,8 +580,7 @@ article
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction:row;
-	justify-content: flex-start;
+	flex-direction:column;
 }
 #formation2
 {
@@ -611,7 +592,7 @@ article
 }
 #experience1
 {
-	width: 90%;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -619,7 +600,7 @@ article
 }
 #experience2
 {
-	width: 90%;
+	width: 100%;
 	height: auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -628,7 +609,7 @@ article
 }
 #experience3
 {
-	width: 90%;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -645,28 +626,29 @@ article
 #infos
 {
 	height: auto;
+	padding: 0px;
+	margin-left: 2%;
 	width: 100%;
-	padding-left: 3%;
-	padding-bottom: 10%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 #recommandations
 {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 }
 #recommandation1
 {
-	width: 50%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-content: flex-start;
 }
 #recommandation2
 {
-	width: 50%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
@@ -692,21 +674,27 @@ article
 	border-top: 3px solid #CEE0FD;
 	width: 100%;
 }
-#titrecv
-{
-	height: 250px;
-	display: inline-flex;
-	flex-direction: column;
-	align-content: flex-start;
-}
+
 /*__________________*/
 
 /*classes*/
 
-/*RAPPROCHEMENT VERTICAL*/
-.rapproche
+/* AFFICHAGE DATES */
+.date
 {
-	margin-top: 5px;
+	background-color: #CEE0FD;
+	width: 100%;
+	line-height: 8px;
+	display: inline-flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+/* AFFICHAGE POSTE */
+.poste
+{
+	width: 100%;
+	line-height: 8%;
 }
 /*MARGE GAUCHE TITRES RUBRIQUES*/
 .titreformation
@@ -719,36 +707,6 @@ article
 	width: 100%;
 	height: auto;
 }	
-/*HAUTEUR RUBRIQUE CONTACT / INFOS*/
-.adresse
-{
-	width: 100%;
-	margin: auto;
-}
-.telephone
-{
-	width: 100%;
-	margin: auto;
-}
-.site
-{
-	width: 100%;
-	margin: auto;
-}
-.mail
-{
-	width: 100%;
-	margin: auto;
-}
-.skype
-{
-	width: 100%;
-	margin: auto;
-}
-#apropos
-{
-	height: auto;
-}
 /*MISE EN MAJUSCULE*/
 .maj
 {
@@ -761,6 +719,7 @@ article
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	display: none;
 
 }
 /*MARGE GAUCHE*/
@@ -778,6 +737,8 @@ article
 .intitule2
 {	
 	width: 100%;
+	margin: 0px;
+	padding: 0px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -798,6 +759,8 @@ article
 	width: 100%;
 	margin: auto;
 	height: auto;
+	display: inline-flex;
+	align-items: center;
 	margin-bottom: 10px;
 	margin-top: 10px;
 }
@@ -811,6 +774,5 @@ article
 {
 	color: #CEE0FD;
 }
-
 
 }
