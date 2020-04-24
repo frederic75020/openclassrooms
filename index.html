@@ -16,26 +16,20 @@
 	</head>
 	<!-- corps de la page -->
 	<body>	
-		<!-- NAVIGATION MOBILE -->
-
-		<nav>
-				<section id="navigation">
-					<p>navigation</p>
-				</section>			
-		</nav>
-		<!-- fin NAVIGATION MOBILE -->	
-
 		<!-- HEADER -->
 		<header>
+			<!-- header gauche / haut -->
 			<section id="header">				
 				<section id="headergauche">
 					<img src="images/photo_cv.jpg" alt="photo">
 				</section>	
-				
-				<section id="headerdroite">	
-						<h1><span class="bleuclair">Frédéric</span></h1><h1>Aurare</h1>
-						<h3>Développeur web freelance</h3>
-				<section id="demitrait">	</section>
+			<!-- header droite / bas -->	
+				<section id="headerdroite">
+					<section>
+					<h1><span class="bleuclair">Frédéric</span> Aurare</h1>
+					</section>
+					<h3>Développeur web freelance</h3>
+					<section id="demitrait">	</section>
 			</section>
 		</header>
 		<!-- FIN DU HEADER -->
@@ -49,14 +43,14 @@
 					 <h2 class="inverse">contact</h2>
 				</section>
 				<!--bloc infos de contact-->
-			 	<section id="infos">
-								
-			 			<p class="element">Adresse<br />1, rue de la République<br />75010 Paris</p>
-			 			<p class="element">Téléphone<br />06 60 00 66 00</p><br />
-			 			<p class="element">Site web<br />www.aurare.fr</p><br />
-			 			<p class="element">Email<br />frederic_k@yahoo.fr</p><br />
-			 			<p class="element">Skype<br />@frederic_meneghello@yahoo.fr</p>	
-			 	</section>
+			 	<ul id="infos">				
+			 		<li class="element">Adresse<br />1, rue de la République<br />75010 Paris</li>
+			 		<li class="element">Téléphone<br />06 60 00 66 00</li>
+			 		<li class="element">Site web<br />www.aurare.fr</li>
+			 		<li class="element">Email<br />frederic_k@yahoo.fr</li>
+			 		<li class="element">Skype<br />@frederic_meneghello@yahoo.fr</li>	
+			 	</ul>
+				 
 		<!-- titre A PROPOS -->
 			 	<section class="titregauche">
 					<h2 class="inverse">à propos de moi</h2>
@@ -68,8 +62,8 @@
 		<!-- titre loisirs -->			
 				<section class="titregauche">
 					<h2 class="inverse">loisirs</h2>
-				</section>				
-					
+				</section>	
+		<!-- icones rubrique loisirs -->							
 				<section id="loisirs">
 			 			<i class="fab fa-instagram fa-2x" style="color:#47555F"></i>
 			 			<i class="fas fa-camera fa-2x" style="color:#47555F"></i>
@@ -80,7 +74,7 @@
 			<section id="coldroite">
 
 				<section class="horizontal">
-					<section class="icon">
+					<section class="bloc">
 						<i class="fas fa-graduation-cap fa-2x" style="color:#CEE0FD"></i>
 					</section>
 					<section class="titreformation">	
@@ -97,12 +91,12 @@
 					<div class="bloc">
 						<i class="far fa-dot-circle" style="color:#CEE0FD"></i>
 					</div>	
-					<section class="rapproche">
-							<h3>depuis 2020</h3><br /><p>Paris</p>
+					<section class="date">
+							<h3>depuis 2020</h3><p>Paris</p>
 					</section>	
 
 					<section class="intitule2">
-						<section class="rapproche">
+						<section class="poste">
 							<h2>Openclassrooms</h2>
 							<p>Junior Web Developper</p>
 						</section>
@@ -113,15 +107,17 @@
 				</section>	
 
 				<section id="formation2">
-					<section class="bloc">
+					<div class="bloc">
 						<i class="fas fa-circle" style="color:#CEE0FD"></i>
-					</section>
-					<section class="rapproche">
-							<h3>2003-2005</h3><br /><p>Epinay</p>
+					</div>
+					<section class="date">
+							<h3>2003-2005</h3><p>Epinay</p>
 					</section>
 
 					<section class="intitule2">
-						<section class="rapproche"><h2>Université Paris 13</h2><p>Master Infocom</p>
+						<section class="poste">
+							<h2>Université Paris 13</h2>
+							<p>Master Infocom</p>
 						</section>	
 						<p>Formation aux métiers de l’infographie, du multimédia, du numérique, de l’édition, des industries culturelles et créatives, de la communication d’entreprise et des ressources humaines</p>	
 					</section>
@@ -141,16 +137,16 @@
 				</section>	
 				
 					<section id="experience1">
-						<section class="bloc">
+						<div class="bloc">
 							<i class="far fa-dot-circle" style="color:#CEE0FD"></i>
-						</section>		
+						</div>		
 
-						<section class="rapproche">
-							<h3>2018-2020</h3><br /><p>Paris</p>
+						<section class="date">
+							<h3>2018-2020</h3><p>Paris</p>
 						</section>
 				
 						<section class="intitule2">
-							<section class="rapproche">
+							<section class="poste">
 								<h2>Aurare</h2><h4>Founder and CEO</h4>
 							</section>
 							<section>
@@ -161,14 +157,14 @@
 
 
 					<section id="experience2">
-						<section class="bloc">
+						<div class="bloc">
 							<i class="fas fa-circle" style="color:#CEE0FD"></i>
-						</section>				
-						<section class="rapproche">	
-							<h3>2014-2018</h3><br /><p>Paris</p>
+						</div>				
+						<section class="date">	
+							<h3>2014-2018</h3><p>Paris</p>
 						</section>		
 						<section class="intitule2">
-							<section class="rapproche">
+							<section class="poste">
 								<h2>Alta Azzura</h2>	
 								<h4>Retail Manager</h4>
 							</section>
@@ -184,11 +180,11 @@
 						<i class="fas fa-circle" style="color:#CEE0FD"></i>
 					</section>
 
-					<section class="rapproche">
-						<h3>2012-2014</h3><br /><p>Paris</p>
+					<section class="date">
+						<h3>2012-2014</h3><p>Paris</p>
 					</section>
 					<section class="intitule2">	
-						<section class="rapproche">
+						<section class="poste">
 							<h2>Esia Films</h2>	
 							<h4>Chargé de communication</h4>
 						</section>

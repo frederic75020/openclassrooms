@@ -25,16 +25,13 @@
     font-style: normal;
 }
 /* STYLES */
-/*ASIDE*/
-aside
-{
 
-}
 /*PUCES*/	
 li
 {
 	font-family: "open_sansregular";
 	list-style: none;
+	font-size: 0.7em;
 }
 /*CORPS DE LA PAGE*/	
 body
@@ -89,7 +86,7 @@ article
 p
 {
 	font-family: "open_sansregular";
-	font-size: 0.6em;
+	font-size: 0.7em;
 	text-align: justify;
 	color: #47555F;
 }
@@ -102,6 +99,7 @@ p
 #header
 {
 	width: 100%;
+	height: 10%;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -113,39 +111,20 @@ p
 	background-color: #CEE0FD;
 	display: flex;
 	width: 30%;
-	padding-top: 5%;
+	padding-top: 2%;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 #headerdroite
 {
-	padding-top: 5%;
-	line-height: 15px;
-	padding-left: 25px;
-	padding-top: 10px;
-	margin-bottom: 5%;
+	padding-top: 2%;
+	padding-left: 5%;
+	margin-bottom: 10%;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 }
-/*__________________*/
-
-/* BLOC NAVIGATION */
-
-#navigation
-
-{
-	color: white;
-	background-color: #47555F;
-	padding-top: 2%;
-	padding-bottom: 2%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	display: none;
-}
-
 /*__________________*/
 
 /* BLOC GLOBAL BODY*/
@@ -177,10 +156,15 @@ p
 
 /* BLOCS ELEMENTS CV */
 
+#apropos
+{
+	height: 40%;
+}
+
 #loisirs
 {
-	width: 70%;
-	height: 100px;
+	width: 80%;
+	height: 4%;
 	margin: auto;
 	display: flex;
 	justify-content: space-around;
@@ -190,24 +174,26 @@ p
 
 #formation1
 {
+	margin-top: 2%;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 #formation2
 {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 #experience1
 {
+	margin-top: 2%;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 #experience2
 {
@@ -215,18 +201,17 @@ p
 	height: auto;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 #experience3
 {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 #photo
 {
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -234,20 +219,14 @@ p
 }	
 #infos
 {
-	height: 25%;
+	padding-top: 10%;
+	height: 30%;
 	padding-left: 5%;
 	display: flex;
 	flex-direction: column;
-}
-.element
-{
-	height: auto;
-	margin: auto;
-	display: flex;
-	flex-direction: column;
 	justify-content: flex-start;
-	
 }
+
 #recommandations
 {
 	display: flex;
@@ -274,7 +253,7 @@ p
 	border-top: 3px solid #CEE0FD;
 	width: 15%;
 }
-/*TRAIT SOUS TITRES RUBRIQUES*/
+/*TRAITS SOUS TITRES RUBRIQUES*/
 #traithorizontal1
 {
 	border-top: 3px solid #CEE0FD;
@@ -290,27 +269,24 @@ p
 	border-top: 3px solid #CEE0FD;
 	width: 100%;
 }
-#titrecv
-{
-	height: 250px;
-	display: inline-flex;
-	flex-direction: column;
-	align-content: flex-start;
-}
 /*__________________*/
 
 /*classes*/
 
-/*RAPPROCHEMENT VERTICAL*/
-.rapproche
+/* INFOS CONTACT SANS MARGES */
+
+.element
 {
-	margin-top: 5px;
-	line-height: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	display: flex;
+	flex-direction: column;	
 }
+
 /*MARGE GAUCHE TITRES RUBRIQUES*/
 .titreformation
 {	
-	margin-left: 2%;
+	margin-left: 3%;
 }
 /*HAUTEUR TITRES COLONNE GAUCHE*/
 .titregauche
@@ -318,31 +294,7 @@ p
 	width: 100%;
 	height: 50px;
 }	
-/*HAUTEUR RUBRIQUE CONTACT / INFOS*/
-#adresse
-{
-	height: 45px;
-}
-.telephone
-{
-	height: 35px;
-}
-.site
-{
-	height: 35px;
-}
-.mail
-{
-	height: 35px;
-}
-.skype
-{
-	height: 35px;
-}
-#apropos
-{
-	height: 50%;
-}
+
 /*MISE EN MAJUSCULE*/
 .maj
 {
@@ -351,11 +303,22 @@ p
 .bloc
 {
 	width: 10%;
-	margin-top: 15px;
+	padding-top: 1%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-
+}
+/* AFFICHAGE DATES */
+.date
+{
+	width:25%;
+	line-height: 6px;
+}
+/* AFFICHAGE POSTE */
+.poste
+{
+	width: 100%;
+	line-height: 6px;
 }
 /*MARGE GAUCHE*/
 .margegauche
@@ -371,10 +334,12 @@ p
 /*MISE EN FORME BLOC TEXTE COLONNE DROITE*/
 .intitule2
 {	
+	margin: 0px;
 	width: 70%;
-	padding-left: 10px;
+	padding-left: 5%;
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	flex-direction: row;
 	justify-content: flex-start;
 }
 /* TYPO TITRE GAUCHE MAJUSCULE INVERSE */
@@ -396,7 +361,6 @@ p
 	flex-wrap: wrap;
 	height: 75px;
 	width: 100%;
-	margin-bottom: 10px;
 }
 .horizontal2
 {
