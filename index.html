@@ -16,71 +16,96 @@
 	</head>
 	<!-- corps de la page -->
 	<body>	
-		<!-- HEADER -->
-		<header>
-			<!-- header gauche / haut -->
-			<section id="header">				
-				<section id="headergauche">
-					<img src="images/photo_cv.jpg" alt="photo">
-				</section>	
-			<!-- header droite / bas -->	
-				<section id="headerdroite">
-					<section>
-					<h1><span class="bleuclair">Frédéric</span> Aurare</h1>
-					</section>
-					<h3>Développeur web freelance</h3>
-					<section id="demitrait">	</section>
-			</section>
-		</header>
-		<!-- FIN DU HEADER -->
 
 		<!-- bloc page global -->
 		<section id="blocpage">
+
 		<!-- colonne de gauche -->	
 			<aside id="colgauche">
-		<!-- titre CONTACT -->
-				<section class="titregauche">
-					 <h2 class="inverse">contact</h2>
-				</section>
-				<!--bloc infos de contact-->
-			 	<ul id="infos">				
-			 		<li class="element">Adresse<br />1, rue de la République<br />75010 Paris</li>
-			 		<li class="element">Téléphone<br />06 60 00 66 00</li>
-			 		<li class="element">Site web<br />www.aurare.fr</li>
-			 		<li class="element">Email<br />frederic_k@yahoo.fr</li>
-			 		<li class="element">Skype<br />@frederic_meneghello@yahoo.fr</li>	
-			 	</ul>
-				 
-		<!-- titre A PROPOS -->
-			 	<section class="titregauche">
-					<h2 class="inverse">à propos de moi</h2>
-				</section>
-		<!-- section A PROPOS-->				
-				<section id="apropos">
-					<article class="margeglobale">Je mets la puissance du digital au service de votre commerce et de votre communication afin d'atteindre vos objectifs. Création de sites clés en main. Amélioration du référencement de votre business. Direction artisitique. Présence omnicanale sur les réseaux sociaux.</article>
-				</section>
-		<!-- titre loisirs -->			
-				<section class="titregauche">
+
+		<!-- photo du cv -->		
+				<div id="photo">
+					<img src="images/photo_cv.jpg" alt="photo">
+				</div>	
+
+		<!-- *************** -->			
+		<!-- section CONTACT  -->
+		<!-- *************** -->	
+
+				<div id="contact">
+
+					<h2 class="inverse">contact</h2>
+
+			 		<ul id="infos">				
+			 			<li class="element">Adresse<br />1, rue de la République<br />75010 Paris</li>
+			 			<li class="element">Téléphone<br />06 60 00 66 00</li>
+			 			<li class="element">Site web<br />www.aurare.fr</li>
+			 			<li class="element">Email<br />frederic_k@yahoo.fr</li>
+			 			<li class="element">Skype<br />@frederic_meneghello@yahoo.fr</li>	
+			 		</ul>
+			 	</div>
+		
+		<!-- *************** -->	 						 
+		<!-- section A PROPOS -->
+		<!-- *************** -->
+
+				<article id="apropos">
+
+					<h2 class="inverse">à propos de moi</h2>			
+					
+					<p class="margeglobale">Je mets la puissance du digital au service de votre commerce et de votre communication afin d'atteindre vos objectifs. Création de sites clés en main. Amélioration du référencement de votre business. Direction artisitique. Présence omnicanale sur les réseaux sociaux.</p>
+
+				</article>
+
+		<!-- *************** -->			
+		<!-- fin de la section a propos -->
+		<!-- *************** -->		
+
+		<!-- *************** -->
+		<!-- section LOISIRS -->
+		<!-- *************** -->
+
+				<article id="loisirs">			
 					<h2 class="inverse">loisirs</h2>
-				</section>	
-		<!-- icones rubrique loisirs -->							
-				<section id="loisirs">
-			 			<i class="fab fa-instagram fa-2x" style="color:#47555F"></i>
-			 			<i class="fas fa-camera fa-2x" style="color:#47555F"></i>
-			 			<i class="fas fa-palette fa-2x" style="color:#47555F"></i>
-			 	</section>		 
+
+					<div id="boxicones">							
+						<div class="icones">
+			 				<i class="fab fa-instagram fa-lg"></i>
+			 			</div>	
+
+			 			<div class="icones">	
+			 				<i class="fas fa-camera fa-lg"></i>
+			 			</div>
+
+			 			<div class="icones">
+			 				<i class="fas fa-palette fa-lg"></i>
+			 			</div>
+			 		</div>	
+			 	</article>
+
+		<!-- *************** -->	 	
+		<!-- fin section loisirs-->	
+		<!-- *************** --> 			
+
 			</aside>
 
 			<section id="coldroite">
 
-				<section class="horizontal">
-					<section class="bloc">
+				<div id="headerdroite">
+					
+						<h1><span class="bleuclair">Frédéric</span> Aurare</h1>
+						<h3>Développeur web freelance</h3>
+						<div id="demitrait"></div>
+				</div>
+
+				<div class="horizontal">
+					<span class="bloc">
 						<i class="fas fa-graduation-cap fa-2x" style="color:#CEE0FD"></i>
-					</section>
-					<section class="titreformation">	
+					</span>
+					<span class="titreformation">	
 						<h2>Formation</h2>
-					</section>
-				</section>	
+					</span>
+				</div>	
 
 				<section>
 					<section id="traithorizontal1"></section>
@@ -88,9 +113,11 @@
 			
 					
 				<section id="formation1">
-					<div class="bloc">
-						<i class="far fa-dot-circle" style="color:#CEE0FD"></i>
+					
+					<div class="puce">
+						<i class="far fa-dot-circle"></i>
 					</div>	
+
 					<section class="date">
 							<h3>depuis 2020</h3>
 							<p>Paris</p>
@@ -108,7 +135,7 @@
 				</section>	
 
 				<section id="formation2">
-					<div class="bloc">
+					<div class="puce">
 						<i class="fas fa-circle" style="color:#CEE0FD"></i>
 					</div>
 					<section class="date">
@@ -138,8 +165,8 @@
 				</section>	
 				
 					<section id="experience1">
-						<div class="bloc">
-							<i class="far fa-dot-circle" style="color:#CEE0FD"></i>
+						<div class="puce">
+							<i class="far fa-dot-circle"></i>
 						</div>		
 
 						<section class="date">
@@ -159,7 +186,7 @@
 
 
 					<section id="experience2">
-						<div class="bloc">
+						<div class="puce">
 							<i class="fas fa-circle" style="color:#CEE0FD"></i>
 						</div>				
 						<section class="date">	
@@ -178,7 +205,7 @@
 	
 				<section id="experience3">
 
-					<section class="bloc">
+					<section class="puce">
 						<i class="fas fa-circle" style="color:#CEE0FD"></i>
 					</section>
 

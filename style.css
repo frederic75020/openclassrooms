@@ -1,6 +1,8 @@
 /*css par Frederic M */
 
+/* ***** */
 /* typos */
+/* ***** */
 
 @font-face {
     font-family: 'open_sansregular';
@@ -24,9 +26,15 @@
     font-weight: normal;
     font-style: normal;
 }
+/* ***** */
 /* STYLES */
+/* ***** */
 
-/*PUCES*/	
+ul
+{
+	list-style: none;
+	padding-left: 5%;
+}
 li
 {
 	font-family: "open_sansregular";
@@ -37,8 +45,10 @@ li
 /*CORPS DE LA PAGE*/	
 body
 {
-	max-width: 827px;
-	max-height: 1170px;
+	width: 827px;
+	height: 1170px;
+	margin-right: auto;
+	margin-left: auto;
 }
 /* TITRES */
 h1
@@ -80,7 +90,7 @@ img
 article
 {
 	font-family: "open_sansregular";
-	font-size: 0.7em;
+	font-size: 1em;
 	text-align: justify;
 	color: color: #47555F;
 }
@@ -96,33 +106,14 @@ p
 /* BLOCS ET CLASSES */
 /*__________________*/
 
-/* BLOCS HEADER */
+/* BLOC HEADER */
 
 #header
 {
-	width: 100%;
-	height: 10%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	margin: auto;
-}
-
-#headergauche
-{
-	background-color: #CEE0FD;
-	display: flex;
-	width: 30%;
-	padding-top: 2%;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-#headerdroite
-{
 	padding-top: 2%;
 	padding-left: 5%;
-	margin-bottom: 10%;
+	padding-bottom: 5%;
+	margin-bottom: 15%;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -130,13 +121,18 @@ p
 /*__________________*/
 
 /* BLOC GLOBAL BODY*/
+/*__________________*/
 
 #blocpage
 {
 	display: flex;
 	flex-direction: row;
 }
+/*__________________*/
+
 /* BLOCS COLONNES */
+/*__________________*/
+
 
 #colgauche
 {
@@ -157,21 +153,63 @@ p
 /*__________________*/
 
 /* BLOCS ELEMENTS CV */
+/*__________________*/
 
-#apropos
+
+#photo
 {
-	height: 40%;
+	width: 100%;
+	height: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-#loisirs
+#contact
 {
+	width: 100%;
+	height: 25%;
+}
+#apropos
+{
+	height: 45%;
+}
+
+#infos
+{
+	padding-right: 5%;
+}	
+
+#boxicones
+{
+	color:#47555F;
 	width: 80%;
-	height: 4%;
 	margin: auto;
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
 	padding: 5%;
-	margin-top: 30px;
+}
+#loisirs
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 5%;
+}
+.icones
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+ 	border: 3px solid #47555F;
+ 	border-radius: 50%;
+    line-height: 100px;
+    padding: 2%;
 }
 
 #formation1
@@ -210,22 +248,6 @@ p
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
-}
-#photo
-{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}	
-#infos
-{
-	padding-top: 10%;
-	height: 30%;
-	padding-left: 5%;
-	display: flex;
-	flex-direction: column;
 	justify-content: flex-start;
 }
 
@@ -273,12 +295,29 @@ p
 	border-top: 3px solid #CEE0FD;
 	width: 100%;
 }
+
 /*__________________*/
 
 /*classes*/
 
 /* INFOS CONTACT SANS MARGES */
 
+.bloc
+{
+	width: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.puce
+{
+	margin-top: 2%;
+	width: 10%;
+	color: #CEE0FD;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
 .element
 {
 	margin-top: 0px;
@@ -304,14 +343,7 @@ p
 {
 	text-transform: uppercase;
 }
-.bloc
-{
-	width: 10%;
-	padding-top: 1%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
+
 /* AFFICHAGE DATES */
 .date
 {
@@ -322,7 +354,8 @@ p
 .poste
 {
 	width: 100%;
-	line-height: 6px;
+	margin: 0px;
+	line-height: 1px;
 }
 /*MARGE GAUCHE*/
 .margegauche
@@ -349,12 +382,13 @@ p
 /* TYPO TITRE GAUCHE MAJUSCULE INVERSE */
 .inverse
 {
+	width: 100%;
 	text-transform: uppercase;
 	color: #CEE0FD;
 	background-color: #47555F;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	margin: 0px;
 	text-align: center;
+
 }
 /* MISE EN FORME HORIZONTALE*/
 .horizontal
