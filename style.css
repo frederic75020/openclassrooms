@@ -414,9 +414,9 @@ p
 	color: #CEE0FD;
 }
 
-/*------------*/
-/* RESPONSIVE PORTABLE*/
-/*------------*/
+/*-------------------- */
+/* RESPONSIVE PORTABLE */
+/*-------------------- */
 
 @media screen and (max-device-width: 480px)
 
@@ -433,6 +433,7 @@ p
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'droid_sansbold';
     src: url('fonts/DroidSans-Bold-webfont.eot');
@@ -448,9 +449,8 @@ p
 /* STYLES */
 /* ***** */
 
-ul
-{
-	font-size: 1.5em;
+ul {
+	font-size: 1.8em;
 	list-style: none;
 	padding-left: 5%;
 	list-style: none;
@@ -468,13 +468,12 @@ body
 {
 	width: 827px;
 	height: 1170px;
-	margin-right: auto;
-	margin-left: auto;
+	margin: auto;
 }
 /* TITRES */
 h1
 {
-	font-size: 2em;
+	font-size: 2.5em;
 	text-transform: uppercase;
 	font-family: "open_sansregular";
 	color: #47555F;
@@ -483,7 +482,7 @@ h2
 {
 	text-transform: uppercase;
 	font-family: "droid_sansbold";
-	font-size: 2em;
+	font-size: 2.3em;
 	color: #47555F;
 }
 
@@ -491,13 +490,13 @@ h3
 {
 	text-transform: uppercase;
 	font-family: "open_sansregular";
-	font-size: 1.8em;
+	font-size: 2.2em;
 	color: #47555F;
 }
 h4
 {
 	font-family: "open_sansregular";
-	font-size: 1.5em;
+	font-size: 2em;
 	color: #47555F;
 	text-transform: uppercase;
 }
@@ -511,7 +510,7 @@ img
 article
 {
 	font-family: "open_sansregular";
-	font-size: 1em;
+	font-size: 2.5em;
 	text-align: justify;
 	color: #47555F;
 }
@@ -519,7 +518,7 @@ article
 p
 {
 	font-family: "open_sansregular";
-	font-size: 1.8em;
+	font-size: 2.5em;
 	text-align: justify;
 	color: #47555F;
 }
@@ -531,7 +530,7 @@ p
 
 #header
 {
-	padding-top: 5%;
+	padding-top: 2%;
 	margin-bottom: 5%;
 	width: 100%;
 	display: flex;
@@ -564,7 +563,7 @@ p
 	background-color: #CEE0FD;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: 90%;
 	border: auto;
 	margin: auto;
 }
@@ -573,7 +572,7 @@ p
 	background-color: white;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: 90%;
 	padding: auto;
 	margin: auto;
 
@@ -849,9 +848,9 @@ p
 
 }
 
-/*------------*/
-/* RESPONSIVE PORTABLE*/
-/*------------*/
+/*-------------------- */
+/* RESPONSIVE TABLETTE */
+/*-------------------- */
 
 @media screen and (max-device-width: 768px)
 
@@ -890,7 +889,7 @@ ul
 	list-style: none;
 	margin-left: 0px;
 	padding-left: 0px;
-	font-size: 2em;
+	font-size: 1.8em;
 }
 li
 {
@@ -903,11 +902,12 @@ body
 {
 	width: 827px;
 	height: 1170px;
+	margin: auto;
 }
 /* TITRES */
 h1
 {
-	font-size: 1.5em;
+	font-size: 2em;
 	text-transform: uppercase;
 	font-family: "open_sansregular";
 	color: #47555F;
@@ -916,7 +916,7 @@ h2
 {
 	text-transform: uppercase;
 	font-family: "droid_sansbold";
-	font-size: 1.5em;
+	font-size: 1.7em;
 	color: #47555F;
 }
 
@@ -924,7 +924,7 @@ h3
 {
 	text-transform: uppercase;
 	font-family: "open_sansregular";
-	font-size: 1.3em;
+	font-size: 1.5em;
 	color: #47555F;
 }
 h4
@@ -941,16 +941,14 @@ img
 	border: #47555F solid 2px;
 }
 /* SECTION ARTICLE */
-article
-{
+article {
 	font-family: "open_sansregular";
 	font-size: 0.8em;
 	text-align: justify;
 	color: #47555F;
 }
 /* TEXTES */
-p
-{
+p {
 	font-family: "open_sansregular";
 	font-size: 1.8em;
 	text-align: justify;
@@ -980,12 +978,11 @@ p
 
 #blocpage
 {
-	width: 100%;
+	width: 90%;
+	margin: auto;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	margin-left: 2%;
-	margin-right: 2%;
 }
 /*__________________*/
 
@@ -1126,21 +1123,21 @@ p
 #recommandations
 {
 	display: flex;
-	flex-direction: row;
+	flex-wrap: wrap;
+	flex-direction: column;
 	margin-bottom: 5%;
 }
 #recommandation1
 {
-	width: 50%;
-	line-height: 1px;
+	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: flex-start;
 }
 #recommandation2
 {
-	width: 50%;
-	line-height: 1px;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
