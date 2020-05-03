@@ -92,7 +92,7 @@ article
 	font-family: "open_sansregular";
 	font-size: 1em;
 	text-align: justify;
-	color: color: #47555F;
+	color: #47555F;
 }
 /* TEXTES */
 p
@@ -111,9 +111,8 @@ p
 #header
 {
 	padding-top: 2%;
-	padding-left: 5%;
-	padding-bottom: 5%;
-	margin-bottom: 15%;
+	padding-left: 2%;
+	margin-bottom: 10%;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -146,7 +145,7 @@ p
 	background-color: white;
 	display: flex;
 	flex-direction: column;
-	width: 527px;
+	width: 70%;
 	padding-left: 25px;
 }
 
@@ -154,7 +153,6 @@ p
 
 /* BLOCS ELEMENTS CV */
 /*__________________*/
-
 
 #photo
 {
@@ -195,8 +193,8 @@ p
 {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	height: 5%;
+	justify-content: space-between;
+	height: 10%;
 }
 .icones
 {
@@ -417,13 +415,12 @@ p
 }
 
 /*------------*/
-/* RESPONSIVE */
+/* RESPONSIVE PORTABLE*/
 /*------------*/
 
-@media only screen and (max-device-width: 480px)
+@media screen and (max-device-width: 480px)
+
 {
-    
-/* typos */
 
 @font-face {
     font-family: 'open_sansregular';
@@ -447,33 +444,37 @@ p
     font-weight: normal;
     font-style: normal;
 }
+/* ***** */
 /* STYLES */
+/* ***** */
 
-header
+ul
 {
-	position: fixed; 
-	margin: auto;
-	width: 90%;
-}	
-aside
-{
-
-}	
+	font-size: 1.5em;
+	list-style: none;
+	padding-left: 5%;
+	list-style: none;
+	margin-left: 0px;
+	padding-left: 0px;
+}
 li
 {
 	font-family: "open_sansregular";
 	list-style: none;
 	color: #47555F;
-}	
+}
+/*CORPS DE LA PAGE*/	
 body
 {
-	width: 90%;
-	margin: auto;
+	width: 827px;
+	height: 1170px;
+	margin-right: auto;
+	margin-left: auto;
 }
-
+/* TITRES */
 h1
 {
-	font-size: 1.2em;
+	font-size: 2em;
 	text-transform: uppercase;
 	font-family: "open_sansregular";
 	color: #47555F;
@@ -482,7 +483,7 @@ h2
 {
 	text-transform: uppercase;
 	font-family: "droid_sansbold";
-	font-size: 0.7em;
+	font-size: 2em;
 	color: #47555F;
 }
 
@@ -490,73 +491,49 @@ h3
 {
 	text-transform: uppercase;
 	font-family: "open_sansregular";
-	font-size: 0.7em;
+	font-size: 1.8em;
 	color: #47555F;
 }
 h4
 {
 	font-family: "open_sansregular";
-	font-size: 0.7em;
+	font-size: 1.5em;
 	color: #47555F;
+	text-transform: uppercase;
 }
+/* IMAGES */	
 img
 {
 	border-radius: 100px;
 	border: #47555F solid 2px;
 }
+/* SECTION ARTICLE */
 article
 {
 	font-family: "open_sansregular";
-	font-size: 1.2em;
-	text-align: justify;
-	color: color: #47555F;
-}
-p
-{
-	font-family: "open_sansregular";
-	font-size: 0.8em;
+	font-size: 1em;
 	text-align: justify;
 	color: #47555F;
 }
-article
+/* TEXTES */
+p
 {
 	font-family: "open_sansregular";
-	font-size: 0.7em;
+	font-size: 1.8em;
 	text-align: justify;
-	color: #47555F;	
+	color: #47555F;
 }
+
 /* BLOCS ET CLASSES */
 /*__________________*/
 
-/* BLOCS HEADER */
+/* BLOC HEADER */
 
 #header
 {
+	padding-top: 5%;
+	margin-bottom: 5%;
 	width: 100%;
-	margin: auto;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-#headergauche
-{
-	margin: auto;
-	width: 100%;
-	height: auto;
-	padding-top: 4%;
-	padding-bottom: 4%;
-	background-color: #CEE0FD;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-}
-#headerdroite
-{
-	width: 100%;
-	padding-bottom: 2%;
-	background-color: white;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -564,71 +541,134 @@ article
 }
 /*__________________*/
 
-/*__________________*/
 /* BLOC GLOBAL BODY*/
+/*__________________*/
 
 #blocpage
 {
-	width: 90%;
-	margin: auto;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-/* BLOCS COLONNES */
-
-#colgauche
-{
-	padding-top: 350px;
 	width: 100%;
-	margin: auto;
-	background-color: #CEE0FD;
-	display: flex;
-	justify-content: space-around;
-	flex-direction: column;
-}
-#coldroite
-{
-	width: 100%;
-	margin: 0px;
-	padding-left: 0px;
-	background-color: white;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	margin-left: 2%;
+	margin-right: 2%; 
 }
 /*__________________*/
 
-/* BLOCS ELEMENTS CV */
+/* BLOCS COLONNES */
+/*__________________*/
 
-#loisirs
+
+#colgauche
 {
-	width: 70%;
+	background-color: #CEE0FD;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	border: auto;
+	margin: auto;
+}
+#coldroite
+{
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: auto;
+	margin: auto;
+
+}
+
+/*__________________*/
+
+/* BLOCS ELEMENTS CV */
+/*__________________*/
+
+#photo
+{
+	width: 100%;
+	height: 20%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#contact
+{
+	width: 100%;
 	height: auto;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+#infos
+{
+	width: 100%;
+	height: auto;
+	padding-left: 2%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}	
+
+#apropos
+{
+	height: 45%;
+}
+
+#boxicones
+{
+	color:#47555F;
+	width: 80%;
 	margin: auto;
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
+	padding: 5%;
+}
+#loisirs
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 10%;
+}
+.icones
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+ 	border: 3px solid #47555F;
+ 	border-radius: 50%;
+    line-height: 100px;
+    padding: 2%;
 }
 
 #formation1
 {
+	margin-top: 2%;
 	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction:column;
+	flex-direction: row;
 }
 #formation2
 {
 	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: flex-start;
 }
 #experience1
 {
+	margin-top: 2%;
 	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: flex-start;
 }
@@ -637,7 +677,6 @@ article
 	width: 100%;
 	height: auto;
 	display: flex;
-	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: flex-start;
 }
@@ -646,45 +685,30 @@ article
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
 	justify-content: flex-start;
 }
-#photo
-{
 
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}	
-#infos
-{
-	height: auto;
-	padding: 0px;
-	margin-left: 2%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-}
 #recommandations
 {
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	flex-direction: row;
+	margin-bottom: 5%;
 }
 #recommandation1
 {
-	width: 100%;
+	width: 50%;
+	line-height: 1px;
 	display: flex;
 	flex-direction: column;
-	align-content: flex-start;
+	justify-content: flex-start;
 }
 #recommandation2
 {
-	width: 100%;
+	width: 50%;
+	line-height: 1px;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 }
 /*TRAIT SOUS HEADER*/
 #demitrait
@@ -692,18 +716,18 @@ article
 	border-top: 3px solid #CEE0FD;
 	width: 15%;
 }
-/*TRAIT SOUS TITRES RUBRIQUES*/
-.traithorizontal1
+/*TRAITS SOUS TITRES RUBRIQUES*/
+#traithorizontal1
 {
 	border-top: 3px solid #CEE0FD;
 	width: 100%;
 }
-.traithorizontal2
+#traithorizontal2
 {
 	border-top: 3px solid #CEE0FD;
 	width: 100%;
 }
-.traithorizontal3
+#traithorizontal3
 {
 	border-top: 3px solid #CEE0FD;
 	width: 100%;
@@ -713,48 +737,56 @@ article
 
 /*classes*/
 
-/* AFFICHAGE DATES */
-.date
+/* INFOS CONTACT SANS MARGES */
+
+.bloc
 {
-	background-color: #CEE0FD;
-	width: 100%;
-	line-height: 8px;
-	display: inline-flex;
-	flex-wrap: wrap;
+	width: 10%;
+	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 }
-/* AFFICHAGE POSTE */
-.poste
+.puce
 {
-	width: 100%;
-	line-height: 8%;
+	display: none;
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-top: 2%;
+	width: 5%;
+	color: #CEE0FD;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
 }
+
 /*MARGE GAUCHE TITRES RUBRIQUES*/
 .titreformation
 {	
-	margin-left: 10px;
+	margin-left: 3%;
 }
 /*HAUTEUR TITRES COLONNE GAUCHE*/
 .titregauche
 {
 	width: 100%;
-	height: auto;
+	height: 50px;
 }	
+
 /*MISE EN MAJUSCULE*/
 .maj
 {
 	text-transform: uppercase;
 }
-.bloc
-{
-	width: 10%;
-	margin-top: 15px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	display: none;
 
+/* AFFICHAGE DATES */
+.date
+{
+
+}
+/* AFFICHAGE POSTE */
+.poste
+{
+	width: 100%;
+	margin: 0px;
 }
 /*MARGE GAUCHE*/
 .margegauche
@@ -770,33 +802,39 @@ article
 /*MISE EN FORME BLOC TEXTE COLONNE DROITE*/
 .intitule2
 {	
-	width: 100%;
 	margin: 0px;
 	padding: 0px;
+	width: 65%;
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	flex-direction: row;
 	justify-content: flex-start;
 }
 /* TYPO TITRE GAUCHE MAJUSCULE INVERSE */
 .inverse
 {
+	width: 100%;
 	text-transform: uppercase;
 	color: #CEE0FD;
 	background-color: #47555F;
-	padding-top: 2%;
-	padding-bottom: 2%;
+	margin: 0px;
 	text-align: center;
+
 }
 /* MISE EN FORME HORIZONTALE*/
 .horizontal
 {
-	width: 100%;
-	margin: auto;
-	height: auto;
 	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 	align-items: center;
-	margin-bottom: 10px;
-	margin-top: 10px;
+	width: 100%;
+	padding-bottom: 5%;
+}
+.horizontal2
+{
+	display: inline-flex;
+	flex-direction: row;
 }
 /*ESPACE VIDE 15 PIXELS*/
 .espace
@@ -810,3 +848,439 @@ article
 }
 
 }
+
+/*------------*/
+/* RESPONSIVE PORTABLE*/
+/*------------*/
+
+@media screen and (max-device-width: 768px)
+
+{
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/OpenSans-Regular-webfont.eot');
+    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'droid_sansbold';
+    src: url('fonts/DroidSans-Bold-webfont.eot');
+    src: url('fonts/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DroidSans-Bold-webfont.woff2') format('woff2'),
+         url('fonts/DroidSans-Bold-webfont.woff') format('woff'),
+         url('fonts/DroidSans-Bold-webfont.ttf') format('truetype'),
+         url('fonts/DroidSans-Bold-webfont.svg#droid_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* ***** */
+/* STYLES */
+/* ***** */
+
+ul
+{
+	list-style: none;
+	padding-left: 5%;
+	list-style: none;
+	margin-left: 0px;
+	padding-left: 0px;
+	font-size: 2em;
+}
+li
+{
+	font-family: "open_sansregular";
+	list-style: none;
+	color: #47555F;
+}
+/*CORPS DE LA PAGE*/	
+body
+{
+	width: 827px;
+	height: 1170px;
+}
+/* TITRES */
+h1
+{
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-family: "open_sansregular";
+	color: #47555F;
+}
+h2
+{
+	text-transform: uppercase;
+	font-family: "droid_sansbold";
+	font-size: 1.5em;
+	color: #47555F;
+}
+
+h3
+{
+	text-transform: uppercase;
+	font-family: "open_sansregular";
+	font-size: 1.3em;
+	color: #47555F;
+}
+h4
+{
+	font-family: "open_sansregular";
+	font-size: 1.2em;
+	color: #47555F;
+	text-transform: uppercase;
+}
+/* IMAGES */	
+img
+{
+	border-radius: 100px;
+	border: #47555F solid 2px;
+}
+/* SECTION ARTICLE */
+article
+{
+	font-family: "open_sansregular";
+	font-size: 0.8em;
+	text-align: justify;
+	color: #47555F;
+}
+/* TEXTES */
+p
+{
+	font-family: "open_sansregular";
+	font-size: 1.8em;
+	text-align: justify;
+	color: #47555F;
+}
+
+
+/* BLOCS ET CLASSES */
+/*__________________*/
+
+/* BLOC HEADER */
+
+#header
+{
+	padding-top: 5%;
+	margin-bottom: 5%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+}
+/*__________________*/
+
+/* BLOC GLOBAL BODY*/
+/*__________________*/
+
+#blocpage
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+/*__________________*/
+
+/* BLOCS COLONNES */
+/*__________________*/
+
+
+#colgauche
+{
+	background-color: #CEE0FD;
+	display: inline-flex;
+	flex-direction: column;
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+#coldroite
+{
+	background-color: white;
+	display: inline-flex;
+	flex-direction: column;
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+
+}
+
+/*__________________*/
+
+/* BLOCS ELEMENTS CV */
+/*__________________*/
+
+#photo
+{
+	width: 100%;
+	height: 20%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#contact
+{
+	width: 100%;
+	height: auto;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+#infos
+{
+	width: 100%;
+	height: auto;
+	padding-left: 2%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}	
+
+#apropos
+{
+	height: 45%;
+}
+
+#boxicones
+{
+	color:#47555F;
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 5%;
+}
+#loisirs
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 10%;
+}
+.icones
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+ 	border: 3px solid #47555F;
+ 	border-radius: 50%;
+    line-height: 100px;
+    padding: 2%;
+}
+
+#formation1
+{
+	margin-top: 2%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+#formation2
+{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+#experience1
+{
+	margin-top: 2%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+#experience2
+{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+#experience3
+{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+#recommandations
+{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 5%;
+}
+#recommandation1
+{
+	width: 50%;
+	line-height: 1px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+#recommandation2
+{
+	width: 50%;
+	line-height: 1px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+/*TRAIT SOUS HEADER*/
+#demitrait
+{
+	border-top: 3px solid #CEE0FD;
+	width: 15%;
+}
+/*TRAITS SOUS TITRES RUBRIQUES*/
+#traithorizontal1
+{
+	border-top: 3px solid #CEE0FD;
+	width: 100%;
+}
+#traithorizontal2
+{
+	border-top: 3px solid #CEE0FD;
+	width: 100%;
+}
+#traithorizontal3
+{
+	border-top: 3px solid #CEE0FD;
+	width: 100%;
+}
+
+/*__________________*/
+
+/*classes*/
+
+/* INFOS CONTACT SANS MARGES */
+
+.bloc
+{
+	width: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.puce
+{
+	display: none;
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-top: 2%;
+	width: 5%;
+	color: #CEE0FD;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+/*MARGE GAUCHE TITRES RUBRIQUES*/
+.titreformation
+{	
+	margin-left: 3%;
+}
+/*HAUTEUR TITRES COLONNE GAUCHE*/
+.titregauche
+{
+	width: 100%;
+	height: 50px;
+}	
+
+/*MISE EN MAJUSCULE*/
+.maj
+{
+	text-transform: uppercase;
+}
+
+/* AFFICHAGE DATES */
+.date
+{
+
+}
+/* AFFICHAGE POSTE */
+.poste
+{
+	width: 100%;
+	margin: 0px;
+}
+/*MARGE GAUCHE*/
+.margegauche
+{
+	padding-left: 15px;
+	padding-right: 10px;
+}
+/*MARGE AUTOUR*/
+.margeglobale
+{
+	padding: 15px;
+}
+/*MISE EN FORME BLOC TEXTE COLONNE DROITE*/
+.intitule2
+{	
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+/* TYPO TITRE GAUCHE MAJUSCULE INVERSE */
+.inverse
+{
+	width: 100%;
+	text-transform: uppercase;
+	color: #CEE0FD;
+	background-color: #47555F;
+	margin: 0px;
+	text-align: center;
+
+}
+/* MISE EN FORME HORIZONTALE*/
+.horizontal
+{
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+	padding-bottom: 5%;
+}
+.horizontal2
+{
+	display: inline-flex;
+	flex-direction: row;
+}
+/*ESPACE VIDE 15 PIXELS*/
+.espace
+{
+	width: 15px;
+}
+/* MISE EN COULEUR BLEU CLAIR*/
+.bleuclair
+{
+	color: #CEE0FD;
+}
+
+}
+
