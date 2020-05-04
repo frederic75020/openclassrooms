@@ -102,12 +102,11 @@ p
 	text-align: justify;
 	color: #47555F;
 }
-header
+aside
 {
 	width: 30%;
 	background-color: #CEE0FD;
 }
-
 /*__________________*/
 /* BLOCS ET CLASSES */
 /*__________________*/
@@ -518,7 +517,7 @@ p
 	text-align: justify;
 	color: #47555F;
 }
-header
+aside
 {
 	width: 100%;
 	background-color: #CEE0FD;
@@ -944,12 +943,11 @@ p {
 	text-align: justify;
 	color: #47555F;
 }
-header
+aside
 {
 	width: 100%;
 	background-color: #CEE0FD;
 }
-
 /*__________________*/
 /* BLOCS ET CLASSES */
 /*__________________*/
