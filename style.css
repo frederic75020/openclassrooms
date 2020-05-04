@@ -102,21 +102,16 @@ p
 	text-align: justify;
 	color: #47555F;
 }
+header
+{
+	width: 30%;
+	background-color: #CEE0FD;
+}
 
+/*__________________*/
 /* BLOCS ET CLASSES */
 /*__________________*/
 
-/* BLOC HEADER */
-
-#header
-{
-	padding-top: 2%;
-	padding-left: 2%;
-	margin-bottom: 10%;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-}
 /*__________________*/
 
 /* BLOC GLOBAL BODY*/
@@ -303,6 +298,7 @@ p
 .bloc
 {
 	width: 10%;
+	color: #CEE0FD;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -418,7 +414,7 @@ p
 /* RESPONSIVE PORTABLE */
 /*-------------------- */
 
-@media screen and (max-device-width: 480px)
+@media screen and (max-width: 480px)
 
 {
 
@@ -522,22 +518,17 @@ p
 	text-align: justify;
 	color: #47555F;
 }
+header
+{
+	width: 100%;
+	background-color: #CEE0FD;
+}
 
+/*__________________*/
 /* BLOCS ET CLASSES */
 /*__________________*/
 
-/* BLOC HEADER */
 
-#header
-{
-	padding-top: 2%;
-	margin-bottom: 5%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	align-items: center;
-}
 /*__________________*/
 
 /* BLOC GLOBAL BODY*/
@@ -739,6 +730,7 @@ p
 .bloc
 {
 	width: 10%;
+	color: #CEE0FD;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -850,7 +842,7 @@ p
 /* RESPONSIVE TABLETTE */
 /*-------------------- */
 
-@media screen and (max-device-width: 768px)
+@media screen and (max-width: 768px)
 
 {
 
@@ -952,23 +944,16 @@ p {
 	text-align: justify;
 	color: #47555F;
 }
+header
+{
+	width: 100%;
+	background-color: #CEE0FD;
+}
 
-
+/*__________________*/
 /* BLOCS ET CLASSES */
 /*__________________*/
 
-/* BLOC HEADER */
-
-#header
-{
-	padding-top: 5%;
-	margin-bottom: 5%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	align-items: center;
-}
 /*__________________*/
 
 /* BLOC GLOBAL BODY*/
@@ -1172,6 +1157,7 @@ p {
 .bloc
 {
 	width: 10%;
+	color: #CEE0FD;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
